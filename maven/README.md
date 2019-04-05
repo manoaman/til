@@ -44,10 +44,13 @@ Note: Running above three Maven goals does not seem to generate `target/site` fo
 Consolidated reports will be generated in, `target/site/surefire-report.html`.
 
 https://stackoverflow.com/questions/2846493/is-there-a-decent-html-junit-report-plugin-for-maven/23958874#23958874
+
 https://qiita.com/unhurried/items/b10d4597d62dea1b3a94
 
 https://maven.apache.org/plugins/maven-site-plugin/index.html
+
 https://maven.apache.org/surefire/maven-surefire-plugin/index.html
+
 https://maven.apache.org/surefire/maven-surefire-report-plugin/index.html
 
 
