@@ -70,3 +70,67 @@ cat /var/log/unattended-upgrades/unattended-upgrades.log
 ```
 
 https://libre-software.net/ubuntu-automatic-updates/
+
+
+---
+
+### NFS mount
+
+In order to mount,
+```
+% sudo mount -a
+```
+
+Unmount,
+```
+% sudo unmount
+```
+
+mount information
+```
+% cat /proc/mounts
+
+or
+
+% df -h
+```
+
+Make sure you have `nfs-common` on the client,
+
+```
+% sudo apt update
+% sudo apt install nfs-common
+```
+https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-18-04
+
+Configure /etc/fstab
+
+```
+# /etc/fstab: static file system information.
+# 
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+
+
+nfs-hogehoge.edu:/ifs/abc/def/ghi              /ifs/abc        nfs     proto=tcp       0       0
+nfs-hogehoge.edu:/ifs/abc/def    /ifs/abc/def    nfs     proto=tcp       0       0
+```
+
+---
+
+### Kill a process listening to a certain port (8080)
+
+```
+% sudo kill `sudo lsof -t -i:8080`
+```
+
+check what process id is listening,
+```
+% fuser 8080/tcp
+```
+
+https://stackoverflow.com/questions/9346211/how-to-kill-a-process-on-a-port-on-ubuntu
+https://stackoverflow.com/questions/11583562/how-to-kill-a-process-running-on-particular-port-in-linux

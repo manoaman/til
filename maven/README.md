@@ -2,36 +2,76 @@
 
 ### Maven Reports
 
-
 Add the reporting plugin and just show the failed tests.
 
 ```
-  <reporting>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-report-plugin</artifactId>
-        <version>3.0.0-M3</version>
-        <configuration>
-          <showSuccess>false</showSuccess>
-        </configuration>
-      </plugin>
-    </plugins>
-  </reporting>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>3.0.0-M3</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M3</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
+            </plugin>
 ```
 
-Run the command.
+Run the `test` to generated individual test reports under `/target/surefire-reports/` in both `.xml` and `.txt` files.
 ```
-  mvn surefire-report:report -DshowSuccess=false
-```
-or
-
-```
-  mvn site
+mvn clean test
 ```
 
+Run the `surefire-report:report-only` to generate a report under `/target/site/surefire-report.html`.  However, this alone won't generate images and stying is not applied.
+```
+mvn surefire-report:report-only
+```
 
-https://maven.apache.org/surefire/maven-surefire-report-plugin/examples/show-failures.html
+Run the `site` to generate `images` and `css` for the reports.
+```
+mvn site -DgenerateReports=false
+```
+
+Note: Running above three Maven goals does not seem to generate `target/site` folder.  Not sure why...
+
+Consolidated reports will be generated in, `target/site/surefire-report.html`.
+
+https://stackoverflow.com/questions/2846493/is-there-a-decent-html-junit-report-plugin-for-maven/23958874#23958874
+
+https://qiita.com/unhurried/items/b10d4597d62dea1b3a94
+
+https://maven.apache.org/plugins/maven-site-plugin/index.html
+
+https://maven.apache.org/surefire/maven-surefire-plugin/index.html
+
+https://maven.apache.org/surefire/maven-surefire-report-plugin/index.html
+
+
+### How to change default maven surefire plugin to higher version?
+
+Use `pluginManagement`.
+
+```
+<build>
+  <pluginManagement>
+   <plugins>
+     <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-surefire-plugin</artifactId>
+       <version>{version}</version>
+     </plugin>
+     ...
+   </plugins>
+ </pluginManagement>
+</build>
+```
 
 
 ### POM.xml structure
