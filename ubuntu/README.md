@@ -118,3 +118,19 @@ Configure /etc/fstab
 nfs-hogehoge.edu:/ifs/abc/def/ghi              /ifs/abc        nfs     proto=tcp       0       0
 nfs-hogehoge.edu:/ifs/abc/def    /ifs/abc/def    nfs     proto=tcp       0       0
 ```
+
+---
+
+### Kill a process listening to a certain port (8080)
+
+```
+% sudo kill `sudo lsof -t -i:8080`
+```
+
+check what process id is listening,
+```
+% fuser 8080/tcp
+```
+
+https://stackoverflow.com/questions/9346211/how-to-kill-a-process-on-a-port-on-ubuntu
+https://stackoverflow.com/questions/11583562/how-to-kill-a-process-running-on-particular-port-in-linux
