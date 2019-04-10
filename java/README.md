@@ -15,4 +15,10 @@
 % sudo apt-get install openjdk-8-jdk 
 ```
 
+#### Check alternative JDKs
+
+```
+% update-alternatives --list java
+```
+
 
