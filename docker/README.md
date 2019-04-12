@@ -103,6 +103,9 @@ Restart Docker.
 $ sudo systemctl restart docker.service
 ```
 
+https://docs.docker.com/install/linux/linux-postinstall/#configure-docker-to-start-on-boot
+https://docs.docker.com/config/daemon/
+
 #### How to stop all the containers
 
 ```
