@@ -134,3 +134,28 @@ check what process id is listening,
 
 https://stackoverflow.com/questions/9346211/how-to-kill-a-process-on-a-port-on-ubuntu
 https://stackoverflow.com/questions/11583562/how-to-kill-a-process-running-on-particular-port-in-linux
+
+### How to enable/disable a service on system startup
+
+Enable
+```
+% systemctl enable <service>
+```
+
+Disable
+```
+% systemctl disable <service>
+```
+
+Check what services are available
+```
+% service --status-all
+```
+
+List enabled ones
+```
+% systemctl list-unit-files | grep enabled
+```
+
+https://askubuntu.com/questions/698993/disable-services-on-startup-in-ubuntu
+https://askubuntu.com/questions/795226/how-to-list-all-enabled-services-from-systemctl
