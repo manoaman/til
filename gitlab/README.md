@@ -64,3 +64,12 @@ https://docs.gitlab.com/runner/executors/README.html#i-am-not-sure
 #### How to register gitlab-ci-multi-runner
 
 https://docs.gitlab.com/runner/register/index.html
+
+
+#### How to explicitly set JAVA_HOME in .gitlab-ci.yml?
+
+```
+before_script:
+  - export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
+  - export PATH=$JAVA_HOME/bin:$M2_HOME/bin:/usr/local/bin:$PATH
+```
