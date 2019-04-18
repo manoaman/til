@@ -161,3 +161,10 @@ https://stackoverflow.com/questions/33430487/how-to-use-gitlab-ci-to-build-a-jav
 #### Docker logs
 
 https://docs.docker.com/engine/reference/commandline/logs/
+
+
+#### How to copy a file from a container to the host machine?
+
+```
+docker cp <containerId>:/file/path/within/container /host/path/target
+```
