@@ -88,3 +88,6 @@ https://docs.gitlab.com/runner/configuration/advanced-configuration.html#the-run
 
 https://docs.gitlab.com/runner/configuration/advanced-configuration.html
 
+#### What are the acronyms in .gitlab-ci.yml?
+
+https://docs.gitlab.com/ee/ci/yaml/#only-and-except-simplified
