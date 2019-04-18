@@ -83,3 +83,8 @@ Modify config.toml to set 10MB. (Values is in kb.)
 ```
 https://docs.gitlab.com/runner/configuration/advanced-configuration.html#the-runners-section
 
+
+#### What are the acronyms in config.toml?
+
+https://docs.gitlab.com/runner/configuration/advanced-configuration.html
+
