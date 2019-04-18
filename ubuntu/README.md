@@ -159,3 +159,10 @@ List enabled ones
 
 https://askubuntu.com/questions/698993/disable-services-on-startup-in-ubuntu
 https://askubuntu.com/questions/795226/how-to-list-all-enabled-services-from-systemctl
+
+#### How to force "yes" on installation?
+
+```
+apt-get --yes --force-yes install $something
+```
+https://superuser.com/questions/164553/automatically-answer-yes-when-using-apt-get-install
