@@ -168,3 +168,6 @@ https://docs.docker.com/engine/reference/commandline/logs/
 ```
 docker cp <containerId>:/file/path/within/container /host/path/target
 ```
+
+#### The Docker executor
+https://docs.gitlab.com/runner/executors/docker.html
