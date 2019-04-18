@@ -73,3 +73,13 @@ before_script:
   - export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
   - export PATH=$JAVA_HOME/bin:$M2_HOME/bin:/usr/local/bin:$PATH
 ```
+
+#### How to upgrade the limit of logging?
+
+Modify config.toml to set 10MB. (Values is in kb.)
+```
+[[runners]]
+  output_limit = 10000
+```
+https://docs.gitlab.com/runner/configuration/advanced-configuration.html#the-runners-section
+
