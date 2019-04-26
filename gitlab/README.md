@@ -64,3 +64,30 @@ https://docs.gitlab.com/runner/executors/README.html#i-am-not-sure
 #### How to register gitlab-ci-multi-runner
 
 https://docs.gitlab.com/runner/register/index.html
+
+
+#### How to explicitly set JAVA_HOME in .gitlab-ci.yml?
+
+```
+before_script:
+  - export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
+  - export PATH=$JAVA_HOME/bin:$M2_HOME/bin:/usr/local/bin:$PATH
+```
+
+#### How to upgrade the limit of logging?
+
+Modify config.toml to set 10MB. (Values is in kb.)
+```
+[[runners]]
+  output_limit = 10000
+```
+https://docs.gitlab.com/runner/configuration/advanced-configuration.html#the-runners-section
+
+
+#### What are the acronyms in config.toml?
+
+https://docs.gitlab.com/runner/configuration/advanced-configuration.html
+
+#### What are the acronyms in .gitlab-ci.yml?
+
+https://docs.gitlab.com/ee/ci/yaml/#only-and-except-simplified

@@ -159,3 +159,18 @@ List enabled ones
 
 https://askubuntu.com/questions/698993/disable-services-on-startup-in-ubuntu
 https://askubuntu.com/questions/795226/how-to-list-all-enabled-services-from-systemctl
+
+#### How to force "yes" on installation?
+
+```
+apt-get --yes --force-yes install $something
+```
+https://superuser.com/questions/164553/automatically-answer-yes-when-using-apt-get-install
+
+#### How to screen capture a selected area
+
+```
+Shift+PrtSc
+```
+
+https://askubuntu.com/questions/170163/how-do-i-set-a-shortcut-to-screenshot-a-selected-area
