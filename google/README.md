@@ -15,3 +15,7 @@ https://developers.google.com/drive/api/v3/quickstart/java?authuser=2
 https://developers.google.com/drive/api/v3/search-parameters
 https://developers.google.com/drive/api/v3/about-auth
 https://developers.google.com/drive/api/v3/reference/files
+
+#### FAQ
+
+https://developers.google.com/explorer-help/
