@@ -15,3 +15,4 @@
 % /usr/local/bin/chromedriver -version
 ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29})
 ```
+https://www.kenst.com/2015/03/installing-chromedriver-on-mac-osx/
