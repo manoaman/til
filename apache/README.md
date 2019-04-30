@@ -25,7 +25,7 @@ ProxyPassReverse /path1 https://hogehoge/somepath
 
 https://stackoverflow.com/questions/25107654/how-to-configure-apache-server-to-talk-to-https-backend-server/25107936
 
-### How to redirect URL from Apache?
+### How to redirect from Apache?
 
 mod_proxy
 
