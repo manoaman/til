@@ -174,3 +174,18 @@ Shift+PrtSc
 ```
 
 https://askubuntu.com/questions/170163/how-do-i-set-a-shortcut-to-screenshot-a-selected-area
+
+#### How to remove Tomcat?
+
+```
+sudo apt remove --purge tomcat8 tomcat8-docs
+sudo apt autoremove
+sudo apt autoclean
+```
+
+and some files can be manually deleted after you do,
+
+```
+sudo apt install locate && sudo updatedb
+locate tomcat
+```
