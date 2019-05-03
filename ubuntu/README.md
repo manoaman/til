@@ -189,3 +189,7 @@ and some files can be manually deleted after you do,
 sudo apt install locate && sudo updatedb
 locate tomcat
 ```
+
+#### How to install a chromedriver?
+
+https://tecadmin.net/setup-selenium-chromedriver-on-ubuntu/
