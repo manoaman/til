@@ -12,3 +12,19 @@
 ```
 
 https://stackoverflow.com/questions/26689428/how-to-select-the-value-from-span-type-dropdown-in-selenium-webdriver
+
+### How to setup chromedriver to do headless Selenium tests to work in conjunction with Docker container?
+
+```
+                // Add these to test if Selenium works on Linux
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("--no-sandbox");
+                options.addArguments("--headless");
+                options.addArguments("--disable-dev-shm-usage");
+
+                DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+                capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+```
+
+https://github.com/heroku/heroku-buildpack-google-chrome/issues/46
+https://stackoverflow.com/questions/23834413/pass-driver-chromeoptions-and-desiredcapabilities
