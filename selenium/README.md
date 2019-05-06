@@ -28,3 +28,4 @@ https://stackoverflow.com/questions/26689428/how-to-select-the-value-from-span-t
 
 https://github.com/heroku/heroku-buildpack-google-chrome/issues/46
 https://stackoverflow.com/questions/23834413/pass-driver-chromeoptions-and-desiredcapabilities
+https://stackoverflow.com/questions/50642308/webdriverexception-unknown-error-devtoolsactiveport-file-doesnt-exist-while-t
