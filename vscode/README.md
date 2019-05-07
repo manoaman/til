@@ -39,3 +39,10 @@ Ctrl+Alt+N
 ```
 
 https://stackoverflow.com/questions/39582491/debug-run-standard-java-in-visual-studio-code-ide-and-os-x
+
+### How to jump to a specific line?
+
+```
+Ctrl+G
+```
+https://blogs.msdn.microsoft.com/zainnab/2010/03/08/go-to-a-line-number/
