@@ -91,3 +91,12 @@ https://docs.gitlab.com/runner/configuration/advanced-configuration.html
 #### What are the acronyms in .gitlab-ci.yml?
 
 https://docs.gitlab.com/ee/ci/yaml/#only-and-except-simplified
+
+#### How do I execute .gitlab-ci.yml jobs from a shell?
+
+```
+% cd /home/gitlab-runner/builds/cde0fc25/0/syamashi/mcpbigmap
+% gitlab-ci-multi-runner exec shell test
+```
+
+https://gitlab.com/gitlab-org/gitlab-runner/issues/312
