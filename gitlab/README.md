@@ -100,3 +100,14 @@ https://docs.gitlab.com/ee/ci/yaml/#only-and-except-simplified
 ```
 
 https://gitlab.com/gitlab-org/gitlab-runner/issues/312
+
+
+#### How to specify the wildcard artifact directories and files?
+
+```
+   artifacts:
+     paths:
+      - "./Dinoskin/target/*"
+      - "./.m2/repository/*"
+```
+https://stackoverflow.com/questions/38009869/how-to-specify-wildcard-artifacts-subdirectories-in-gitlab-ci-yml
