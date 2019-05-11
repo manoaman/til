@@ -122,3 +122,10 @@ Use `pluginManagement`.
 ```
 
 https://maven.apache.org/pom.html
+
+### How to run Maven in a non-intractive way?
+
+```
+mvn --batch-mode ...
+```
+https://maven.apache.org/maven-release/maven-release-plugin/examples/non-interactive-release.html
