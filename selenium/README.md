@@ -39,3 +39,21 @@ WebElement myDynamicElement = (new WebDriverWait(driver, 10))
   .until(ExpectedConditions.presenceOfElementLocated(By.id("myDynamicElement")));
 ```
 https://docs.seleniumhq.org/docs/04_webdriver_advanced.jsp
+
+
+### Why am I receiving "Selenium Error: no display specified"?
+
+`DISPLAY` variable needs to be set to run a headless chromedriver.  With DISPLAY=localhost:0.0 you are asking to connect to an X11 server via TCP. Your X server is most likely not listening on a TCP socket.
+
+```
+export DISPLAY=localhost:0.0
+```
+https://stackoverflow.com/questions/24653127/selenium-error-no-display-specified
+https://www.linuxquestions.org/questions/linux-newbie-8/display%3D-0-0-vs-display%3Dlocalhost-0-0-a-933940/
+
+Note:  What is Xvbf?
+
+```
+Xvfb is a virtual display framebuffer for X - the display system used by Linux. It provides a fake display buffer for graphical programs to write to, thus allowing any program to run headlessly.Jan 9, 2015
+```
+http://tobyho.com/2015/01/09/headless-browser-testing-xvfb/
