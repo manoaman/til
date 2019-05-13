@@ -102,6 +102,14 @@ https://docs.gitlab.com/ee/ci/yaml/#only-and-except-simplified
 https://gitlab.com/gitlab-org/gitlab-runner/issues/312
 
 
+#### How to keep the built artifacts in GitLab and share with other jobs?
+
+Use `artifacts` and `dependencies`.
+
+https://stackoverflow.com/questions/42948062/stop-gitlab-runner-to-not-remove-a-directory
+https://docs.gitlab.com/ce/ci/yaml/README.html#artifacts
+https://docs.gitlab.com/ce/ci/yaml/README.html#dependencies
+
 #### How to specify the wildcard artifact directories and files?
 
 ```
