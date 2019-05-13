@@ -29,3 +29,13 @@ https://stackoverflow.com/questions/26689428/how-to-select-the-value-from-span-t
 https://github.com/heroku/heroku-buildpack-google-chrome/issues/46
 https://stackoverflow.com/questions/23834413/pass-driver-chromeoptions-and-desiredcapabilities
 https://stackoverflow.com/questions/50642308/webdriverexception-unknown-error-devtoolsactiveport-file-doesnt-exist-while-t
+
+### How to use Explicit Waits?
+
+```
+WebDriver driver = new FirefoxDriver();
+driver.get("http://somedomain/url_that_delays_loading");
+WebElement myDynamicElement = (new WebDriverWait(driver, 10))
+  .until(ExpectedConditions.presenceOfElementLocated(By.id("myDynamicElement")));
+```
+https://docs.seleniumhq.org/docs/04_webdriver_advanced.jsp
