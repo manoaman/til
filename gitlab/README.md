@@ -111,3 +111,26 @@ https://gitlab.com/gitlab-org/gitlab-runner/issues/312
       - "./.m2/repository/*"
 ```
 https://stackoverflow.com/questions/38009869/how-to-specify-wildcard-artifacts-subdirectories-in-gitlab-ci-yml
+
+
+#### How to setup for Maven deployment to the server?
+
+Since you want to use GitLab Runner to automatically deploy the application, you should create the file in the project’s home directory and set a command line parameter in .gitlab-ci.yml to use the custom location instead of the default one:
+
+1. Create a folder called .m2 in the root of your repository
+2. Create a file called settings.xml in the .m2 folder
+3. Copy the following content into a settings.xml file:
+
+```
+ <settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd"
+     xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <servers>
+     <server>
+       <id>central</id>
+       <username>${env.MAVEN_REPO_USER}</username>
+       <password>${env.MAVEN_REPO_PASS}</password>
+     </server>
+   </servers>
+ </settings>
+```
+https://docs.gitlab.com/ee/ci/examples/artifactory_and_gitlab/
