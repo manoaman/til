@@ -180,6 +180,15 @@ https://hub.docker.com/r/diouxx/apache-proxy/dockerfile
 https://github.com/DiouxX/docker-apache-proxy/blob/master/Dockerfile
 https://stackoverflow.com/questions/26474476/minimal-configuration-for-apache-reverse-proxy-in-docker-container
 
+#### How to update /etc/hosts file in Docker image during “docker build”?
+
+```
+extra_hosts:
+ - "somehost:162.242.195.82"
+ - "otherhost:50.31.209.229"
+```
+https://stackoverflow.com/questions/38302867/how-to-update-etc-hosts-file-in-docker-image-during-docker-build
+
 #### Linking Tomcat container and Apache
 
 ```
@@ -195,7 +204,9 @@ ProxyPass /hogehoge/ http://tomcat:8080/hogehoge/
 ProxyPassReverse /hogehoge/ http://tomcat:8080/hogehoge/
 ```
 
+#### Run multiple applications with Apache Docker
 
+https://medium.com/@jmarhee/running-multiple-web-applications-on-a-docker-host-with-apache-85f673f02803
 
 ---
 #### Docker cheatsheet
