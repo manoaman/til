@@ -169,6 +169,8 @@ https://docs.docker.com/engine/reference/commandline/logs/
 docker cp <containerId>:/file/path/within/container /host/path/target
 ```
 
+https://stackoverflow.com/questions/22907231/copying-files-from-host-to-docker-container
+
 #### The Docker executor
 https://docs.gitlab.com/runner/executors/docker.html
 
@@ -232,4 +234,5 @@ https://forums.docker.com/t/installing-docker-on-windows-10-home/11722/2
 How to use “localhost” instead of “192.168.99.100”?
 https://forums.docker.com/t/how-to-use-localhost-instead-of-192-168-99-100/54098
 https://www.jhipster.tech/tips/020_tip_using_docker_containers_as_localhost_on_mac_and_windows.html
+
 
