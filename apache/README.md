@@ -31,6 +31,8 @@ $ httpd -M
 $ apache2ctl -M
 ```
 
+https://www.tecmint.com/check-apache-modules-enabled/
+
 ### How to use SSL proxying?
 
 ```
