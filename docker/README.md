@@ -223,6 +223,9 @@ Remove containers:
 docker system prune -a
 ```
 
+docker-compose ps
+docker-compose rm
+
 https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/
 
 ---
