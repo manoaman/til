@@ -175,6 +175,7 @@ https://docs.gitlab.com/runner/executors/docker.html
 
 #### Apache Proxy in Docker container
 
+https://www.digitalocean.com/community/tutorials/how-to-use-apache-as-a-reverse-proxy-with-mod_proxy-on-ubuntu-16-04
 https://hub.docker.com/r/diouxx/apache-proxy/dockerfile
 https://github.com/DiouxX/docker-apache-proxy/blob/master/Dockerfile
 https://stackoverflow.com/questions/26474476/minimal-configuration-for-apache-reverse-proxy-in-docker-container
