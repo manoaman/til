@@ -173,6 +173,30 @@ docker cp <containerId>:/file/path/within/container /host/path/target
 https://docs.gitlab.com/runner/executors/docker.html
 
 
+#### Apache Proxy in Docker container
+
+https://hub.docker.com/r/diouxx/apache-proxy/dockerfile
+https://github.com/DiouxX/docker-apache-proxy/blob/master/Dockerfile
+https://stackoverflow.com/questions/26474476/minimal-configuration-for-apache-reverse-proxy-in-docker-container
+
+#### Linking Tomcat container and Apache
+
+```
+services:
+    depends_on:
+      - tomcat
+```
+      
+And use in apache2.conf like,
+
+```
+ProxyPass /hogehoge/ http://tomcat:8080/hogehoge/
+ProxyPassReverse /hogehoge/ http://tomcat:8080/hogehoge/
+```
+
+
+
+---
 #### Docker cheatsheet
 
 Remove volumes:
