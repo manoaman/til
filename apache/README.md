@@ -14,6 +14,22 @@ sudo a2enmod proxy_http
 ```
 https://stackoverflow.com/questions/23931987/apache-proxy-no-protocol-handler-was-valid
 
+### How to check Apache modules are enabled and loaded?
+
+```
+---------------  On Debian based systems --------------- 
+$ apache2ctl -t -D DUMP_MODULES   
+OR 
+$ apache2ctl -M
+```
+
+```
+---------------  On RHEL based systems --------------- 
+$ apachectl -t -D DUMP_MODULES   
+OR 
+$ httpd -M
+$ apache2ctl -M
+```
 
 ### How to use SSL proxying?
 
