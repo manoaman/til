@@ -247,6 +247,7 @@ How to install?
 https://forums.docker.com/t/installing-docker-on-windows-10-home/11722/2
 
 How to use “localhost” instead of “192.168.99.100”?
+https://stackoverflow.com/questions/42866013/docker-toolbox-localhost-not-working
 https://forums.docker.com/t/how-to-use-localhost-instead-of-192-168-99-100/54098
 https://www.jhipster.tech/tips/020_tip_using_docker_containers_as_localhost_on_mac_and_windows.html
 
