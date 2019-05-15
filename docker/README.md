@@ -210,6 +210,41 @@ ProxyPassReverse /hogehoge/ http://tomcat:8080/hogehoge/
 
 https://medium.com/@jmarhee/running-multiple-web-applications-on-a-docker-host-with-apache-85f673f02803
 
+
+#### How to mount multiple NFS mount points?
+
+`docker-compose.yml`
+
+```
+volumes:
+  nfs_test:
+    driver: local
+    driver_opts:
+      type: "nfs"
+      o: "addr=nfs-ifs.hogehoge.edu,ro"
+      device: ":/hogehoge/hoge1"
+  nfs_test2:
+    driver: local
+    driver_opts:
+      type: "nfs"
+      o: "addr=nfs-ifs.hogehoge.edu,ro"
+      device: ":/hogehoge/hoge2"
+  db-data:
+
+services:  
+  httpd_proxy:
+    container_name: httpd-container2
+    build: ./Apache_proxy
+    ports:
+      - "80:80"
+    volumes:
+      - "nfs_test:/ifs/hoge1"
+      - "nfs_test2:/ifs/hoge2"  
+    depends_on:
+      - tomcat
+```
+
+
 ---
 #### Docker cheatsheet
 
