@@ -267,3 +267,4 @@ and
 % screen -r
 ```
 https://serverfault.com/questions/19634/how-to-reconnect-to-a-disconnected-ssh-session
+https://askubuntu.com/questions/315408/open-terminal-with-multiple-tabs-and-execute-application
