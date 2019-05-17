@@ -255,3 +255,15 @@ sudo ln -s /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/loca
 ```
 
 https://www.vultr.com/docs/how-to-install-phantomjs-on-ubuntu-16-04
+
+
+#### How to deal with disconnected ssh terminals?
+
+```
+% screen
+```
+and
+```
+% screen -r
+```
+https://serverfault.com/questions/19634/how-to-reconnect-to-a-disconnected-ssh-session
