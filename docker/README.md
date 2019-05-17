@@ -169,5 +169,122 @@ https://docs.docker.com/engine/reference/commandline/logs/
 docker cp <containerId>:/file/path/within/container /host/path/target
 ```
 
+https://stackoverflow.com/questions/22907231/copying-files-from-host-to-docker-container
+
 #### The Docker executor
 https://docs.gitlab.com/runner/executors/docker.html
+
+
+#### Apache Proxy in Docker container
+
+https://www.digitalocean.com/community/tutorials/how-to-use-apache-as-a-reverse-proxy-with-mod_proxy-on-ubuntu-16-04
+https://hub.docker.com/r/diouxx/apache-proxy/dockerfile
+https://github.com/DiouxX/docker-apache-proxy/blob/master/Dockerfile
+https://stackoverflow.com/questions/26474476/minimal-configuration-for-apache-reverse-proxy-in-docker-container
+
+#### How to update /etc/hosts file in Docker image during “docker build”?
+
+```
+extra_hosts:
+ - "somehost:162.242.195.82"
+ - "otherhost:50.31.209.229"
+```
+https://stackoverflow.com/questions/38302867/how-to-update-etc-hosts-file-in-docker-image-during-docker-build
+
+#### Linking Tomcat container and Apache
+
+```
+services:
+    depends_on:
+      - tomcat
+```
+      
+And use in apache2.conf like,
+
+```
+ProxyPass /hogehoge/ http://tomcat:8080/hogehoge/
+ProxyPassReverse /hogehoge/ http://tomcat:8080/hogehoge/
+```
+
+#### Run multiple applications with Apache Docker
+
+https://medium.com/@jmarhee/running-multiple-web-applications-on-a-docker-host-with-apache-85f673f02803
+
+
+#### How to mount multiple NFS mount points?
+
+`docker-compose.yml`
+
+```
+volumes:
+  nfs_test:
+    driver: local
+    driver_opts:
+      type: "nfs"
+      o: "addr=nfs-ifs.hogehoge.edu,ro"
+      device: ":/hogehoge/hoge1"
+  nfs_test2:
+    driver: local
+    driver_opts:
+      type: "nfs"
+      o: "addr=nfs-ifs.hogehoge.edu,ro"
+      device: ":/hogehoge/hoge2"
+  db-data:
+
+services:  
+  httpd_proxy:
+    container_name: httpd-container2
+    build: ./Apache_proxy
+    ports:
+      - "80:80"
+    volumes:
+      - "nfs_test:/ifs/hoge1"
+      - "nfs_test2:/ifs/hoge2"  
+    depends_on:
+      - tomcat
+```
+
+https://www.reddit.com/r/docker/comments/asubnn/nfs_volumes_no_route_to_host/
+
+---
+#### Docker cheatsheet
+
+Remove volumes:
+```
+docker system prune --volumes
+```
+
+Remove containers:
+```
+docker system prune -a
+```
+
+Shutting down composed Docker containers are
+```
+docker-compose down -v
+```
+or
+```
+docker-compose down
+docker volume prune
+```
+
+```
+docker-compose ps
+docker-compose rm
+```
+
+https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/
+
+---
+#### Issues on Windows 10 Home and Docker
+
+How to install?
+https://forums.docker.com/t/installing-docker-on-windows-10-home/11722/2
+
+How to use “localhost” instead of “192.168.99.100”?
+https://stackoverflow.com/questions/42866013/docker-toolbox-localhost-not-working
+https://forums.docker.com/t/how-to-use-localhost-instead-of-192-168-99-100/54098
+https://www.jhipster.tech/tips/020_tip_using_docker_containers_as_localhost_on_mac_and_windows.html
+
+

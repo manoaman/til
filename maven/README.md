@@ -122,3 +122,17 @@ Use `pluginManagement`.
 ```
 
 https://maven.apache.org/pom.html
+
+### How to run Maven in a non-intractive way?
+
+```
+mvn --batch-mode ...
+```
+https://maven.apache.org/maven-release/maven-release-plugin/examples/non-interactive-release.html
+
+### How to test an individual file?
+
+```
+mvn test -Dtest=SomeTests
+```
+https://stackoverflow.com/questions/1873995/run-a-single-test-method-with-maven

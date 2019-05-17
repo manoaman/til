@@ -174,3 +174,84 @@ Shift+PrtSc
 ```
 
 https://askubuntu.com/questions/170163/how-do-i-set-a-shortcut-to-screenshot-a-selected-area
+
+#### How to remove Tomcat?
+
+```
+sudo apt remove --purge tomcat8 tomcat8-docs
+sudo apt autoremove
+sudo apt autoclean
+```
+
+and some files can be manually deleted after you do,
+
+```
+sudo apt install locate && sudo updatedb
+locate tomcat
+```
+
+#### How to install chromedriver?
+
+https://tecadmin.net/setup-selenium-chromedriver-on-ubuntu/
+
+Prerequisite
+```
+sudo apt-get update
+sudo apt-get install -y unzip xvfb libxi6 libgconf-2-4
+
+sudo apt-get install default-jdk 
+```
+
+Install Chrome
+
+Install
+```
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+sudo apt-get update 
+sudo apt-get install google-chrome-stable
+```
+
+Update
+```
+sudo apt-get --only-upgrade install google-chrome-stable
+```
+
+Install via http://askubuntu.com/questions/510056/how-to-install-google-chrome
+
+Install Chrome Driver
+```
+wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip
+unzip chromedriver_linux64.zip
+
+sudo mv chromedriver /usr/bin/chromedriver
+sudo chown root:root /usr/bin/chromedriver
+sudo chmod +x /usr/bin/chromedriver
+```
+
+https://tecadmin.net/setup-selenium-chromedriver-on-ubuntu/
+
+Install PhantomJS
+
+Before installing PhantomJS, you will need to install some required packages on your system. You can install all of them with the following command:
+
+```
+sudo apt-get install build-essential chrpath libssl-dev libxft-dev libfreetype6-dev libfreetype6 libfontconfig1-dev libfontconfig1 -y
+```
+
+Next, you will need to download the PhantomJS. You can download the latest stable version of the PhantomJS from their official website. Run the following command to download PhantomJS:
+
+```
+sudo wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
+```
+Once the download is complete, extract the downloaded archive file to desired system location:
+
+```
+sudo tar xvjf phantomjs-2.1.1-linux-x86_64.tar.bz2 -C /usr/local/share/
+```
+Next, create a symlink of PhantomJS binary file to systems bin dirctory:
+```
+sudo ln -s /usr/local/share/phantomjs-2.1.1-linux-x86_64/bin/phantomjs /usr/local/bin/
+```
+
+https://www.vultr.com/docs/how-to-install-phantomjs-on-ubuntu-16-04
