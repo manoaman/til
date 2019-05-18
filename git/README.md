@@ -17,5 +17,8 @@ https://qiita.com/ytkt/items/a2afd6be8e4f06c1ea25
 git init
 git add .
 git commit -m "Add first."
+
+git push --allow-unrelated-histories
 ```
 https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line
+https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase
