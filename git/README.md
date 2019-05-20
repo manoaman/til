@@ -22,3 +22,11 @@ git push --allow-unrelated-histories
 ```
 https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line
 https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase
+
+
+#### How to change the URI (URL) for a remote Git repository?
+
+```
+git remote set-url origin new.git.url/here
+```
+https://stackoverflow.com/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository
