@@ -288,3 +288,21 @@ https://forums.docker.com/t/how-to-use-localhost-instead-of-192-168-99-100/54098
 https://www.jhipster.tech/tips/020_tip_using_docker_containers_as_localhost_on_mac_and_windows.html
 
 
+#### Docker in Windows10 and issues with loading config files for MySQL due to 777 files permissions granted by VirtuablBox.
+
+Dockerfile
+```
+FROM mysql:5.7
+
+RUN touch /var/log/mysql/mysqld.log
+
+# This is a workaround for Windows10
+# Config files won't load if you use Windows10/VirtualBox/Docker Toolbox due to 777 permissions
+ADD ./conf.d/my.cnf /etc/mysql/conf.d/my.cnf
+ADD ./conf.d/disable_strict_mode.cnf /etc/mysql/conf.d/disable_strict_mode.cnf
+RUN chmod 644 /etc/mysql/conf.d/my.cnf
+RUN chmod 644 /etc/mysql/conf.d/disable_strict_mode.cnf
+```
+
+And don't use `Volume:` from `docker-compose.yml`
+
