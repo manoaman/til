@@ -6,3 +6,22 @@
 ```
  cat ~/.mysql_history
 ```
+
+#### How to disable strict mode?
+
+a. From a command line
+```
+$ mysql -u root -p -e "SET GLOBAL sql_mode = 'NO_ENGINE_SUBSTITUTION';" 
+
+$ mysql -u root -p -e "SELECT @@GLOBAL.sql_mode;"
+```
+https://www.linode.com/community/questions/17070/how-can-i-disable-mysql-strict-mode
+
+b. From a configuration files
+
+/etc/mysql/conf.d/diable_strict_mode.cnf
+```
+[mysqld]
+sql_mode=IGNORE_SPACE,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+```
+https://www.linode.com/community/questions/17070/how-can-i-disable-mysql-strict-mode
