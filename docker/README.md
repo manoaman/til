@@ -306,3 +306,4 @@ RUN chmod 644 /etc/mysql/conf.d/disable_strict_mode.cnf
 
 And don't use `Volume:` from `docker-compose.yml`
 
+https://qiita.com/koyo-miyamura/items/4d1430b9086c5d4a58a5
