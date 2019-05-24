@@ -52,3 +52,9 @@ https://blogs.msdn.microsoft.com/zainnab/2010/03/08/go-to-a-line-number/
 ```
 Ctrl+r
 ```
+
+### How to open/close terminal?
+
+```
+Ctrl + `
+```
