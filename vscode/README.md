@@ -46,3 +46,15 @@ https://stackoverflow.com/questions/39582491/debug-run-standard-java-in-visual-s
 Ctrl+G
 ```
 https://blogs.msdn.microsoft.com/zainnab/2010/03/08/go-to-a-line-number/
+
+### How to list and open the history of used workspaces?
+
+```
+Ctrl+r
+```
+
+### How to open/close terminal?
+
+```
+Ctrl + `
+```
