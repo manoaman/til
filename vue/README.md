@@ -62,3 +62,25 @@ and access `http://localhost:8080`, you will see the Vue page.
 #### Useful resources for learning Vue and Vue-Cli
 
 https://qiita.com/tiwu_official/items/43dc554ec43dd951812a
+https://qiita.com/567000/items/dde495d6a8ad1c25fa43
+https://www.monster-dive.com/blog/web_creative/20180608_001789.php
+
+#### Usage of npm commands to build and start Vue application.
+
+Webpack builds
+```
+$ npm run build	Webpack
+```
+
+Local server gets started
+```
+$ npm run serve
+```
+
+Webpack builds and a local server gets started
+```
+$ npm run start
+```
+
+http://localhost:8080
+
