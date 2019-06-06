@@ -19,6 +19,10 @@ https://stackoverflow.com/questions/49019022/how-do-i-check-my-vue-js-version
 
 https://wlada.github.io/vue-carousel-3d/
 
+#### Radio buttons in Vue
+
+https://www.kz62.net/entry/vue-radio-button
+
 #### How to configure config/index.js so that webpack can build the index.html with public path?
 
 Note:  There is `assetsPublicPath` in `dev:{` so don't get confused with `build:{`.
@@ -65,6 +69,8 @@ https://qiita.com/tiwu_official/items/43dc554ec43dd951812a
 https://qiita.com/567000/items/dde495d6a8ad1c25fa43
 https://www.monster-dive.com/blog/web_creative/20180608_001789.php
 https://www.hypertextcandy.com/vuejs-components-introduction-environment-setting
+https://medium.com/js-dojo/vue-js-single-file-components-vue-cli-and-example-of-how-to-build-reusable-components-cf0991adbc2f
+https://qiita.com/tsuuuuu_san/items/1bdd6a6b396a1169fc82
 
 #### Usage of npm commands to build and start Vue application.
 
@@ -93,4 +99,34 @@ child1 ---> ($emit) ---> parent ---> (prop) ---> child2
 ```
 
 https://www.hypertextcandy.com/vuejs-components-introduction-communication-between-components/
+https://dev.to/alexmourer/sharing-data-between-components-invuejs-48me
+https://www.telerik.com/blogs/how-to-emit-data-in-vue-beyond-the-vuejs-documentation
 
+#### Vue 'export default' vs 'new Vue'?
+
+https://stackoverflow.com/questions/48727863/vue-export-default-vs-new-vue
+
+#### What is Single File Components?
+
+https://dev.to/sambenskin/an-introduction-to-single-file-components-in-vuejs-10el
+https://www.freecodecamp.org/news/how-to-create-a-vue-js-app-using-single-file-components-without-the-cli-7e73e5b8244f/
+
+
+#### Prop Casing (camelCase vs kebab-case)
+
+HTML attribute names are case-insensitive, so browsers will interpret any uppercase characters as lowercase. That means when you’re using in-DOM templates, camelCased prop names need to use their kebab-cased (hyphen-delimited) equivalents:
+
+```
+Vue.component('blog-post', {
+  // camelCase in JavaScript
+  props: ['postTitle'],
+  template: '<h3>{{ postTitle }}</h3>'
+})
+```
+```
+<!-- kebab-case in HTML -->
+<blog-post post-title="hello!"></blog-post>
+```
+Again, if you’re using string templates, this limitation does not apply.
+
+https://vuejs.org/v2/guide/components-props.html
