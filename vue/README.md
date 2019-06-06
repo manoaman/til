@@ -64,6 +64,7 @@ and access `http://localhost:8080`, you will see the Vue page.
 https://qiita.com/tiwu_official/items/43dc554ec43dd951812a
 https://qiita.com/567000/items/dde495d6a8ad1c25fa43
 https://www.monster-dive.com/blog/web_creative/20180608_001789.php
+https://www.hypertextcandy.com/vuejs-components-introduction-environment-setting
 
 #### Usage of npm commands to build and start Vue application.
 
@@ -83,4 +84,13 @@ $ npm run start
 ```
 
 http://localhost:8080
+
+
+#### How to understand the relationships of parent and child components and passing data to one another in Vue?
+
+```
+child1 ---> ($emit) ---> parent ---> (prop) ---> child2
+```
+
+https://www.hypertextcandy.com/vuejs-components-introduction-communication-between-components/
 
