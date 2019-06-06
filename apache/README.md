@@ -56,3 +56,17 @@ mod_proxy
 ```
 
 https://serverfault.com/questions/918033/redirect-web-page-to-another-site-without-changing-url
+
+#### How to setup Basic Authentication on a certain path?
+
+`httpd.conf`
+```
+        AuthType basic
+        AuthName "private"
+        AuthUserFile /srv/httpd/.htpasswd
+```
+
+`.httpdpasswd` can be setup by using something like http://www.htaccesstools.com/htpasswd-generator/
+
+https://cwiki.apache.org/confluence/display/HTTPD/PasswordBasicAuth
+
