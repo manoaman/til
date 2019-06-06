@@ -24,6 +24,10 @@ https://wlada.github.io/vue-carousel-3d/
 https://www.kz62.net/entry/vue-radio-button
 https://bootsnipp.com/snippets/Zk2Pz
 
+#### Vue gallery
+
+https://vuejsexamples.com/vuejs-responsive-and-customizable-image-and-video-gallery-2/
+
 #### How to configure config/index.js so that webpack can build the index.html with public path?
 
 Note:  There is `assetsPublicPath` in `dev:{` so don't get confused with `build:{`.
@@ -73,6 +77,7 @@ https://www.hypertextcandy.com/vuejs-components-introduction-environment-setting
 https://medium.com/js-dojo/vue-js-single-file-components-vue-cli-and-example-of-how-to-build-reusable-components-cf0991adbc2f
 https://qiita.com/tsuuuuu_san/items/1bdd6a6b396a1169fc82
 https://laracasts.com/discuss/channels/vue/how-to-add-atkeyup-globally-with-vue
+https://qiita.com/yusuke_ten/items/3c5ae79da459fb566fbd
 
 #### Usage of npm commands to build and start Vue application.
 
@@ -132,3 +137,20 @@ Vue.component('blog-post', {
 Again, if you’re using string templates, this limitation does not apply.
 
 https://vuejs.org/v2/guide/components-props.html
+
+
+### About Webpack
+
+https://medium.com/the-self-taught-programmer/what-is-webpack-and-why-should-i-care-part-1-introduction-ca4da7d0d8dc
+
+#### Comparisons of Vue and other frameworks
+
+https://jp.vuejs.org/v2/guide/comparison.html#AngularJS-Angular-1
+
+#### About Vue instance lifecycle
+
+https://jp.vuejs.org/v2/guide/instance.html
+
+#### About Dockerizing Vue application
+
+https://jp.vuejs.org/v2/cookbook/dockerize-vuejs-app.html
