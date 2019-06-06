@@ -1,4 +1,4 @@
-# vue-stuffs
+# Vue related stuffs
 
 #### How to check Vue.js version?
 
