@@ -154,3 +154,12 @@ https://jp.vuejs.org/v2/guide/instance.html
 #### About Dockerizing Vue application
 
 https://jp.vuejs.org/v2/cookbook/dockerize-vuejs-app.html
+
+#### How to deploy Vue app on a server?
+
+```
+$ vue init webpack myproject
+
+$ npm run build
+```
+And copy index.html and /dist/ folder into your website root directory. Done.
