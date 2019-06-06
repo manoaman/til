@@ -22,6 +22,7 @@ https://wlada.github.io/vue-carousel-3d/
 #### Radio buttons in Vue
 
 https://www.kz62.net/entry/vue-radio-button
+https://bootsnipp.com/snippets/Zk2Pz
 
 #### How to configure config/index.js so that webpack can build the index.html with public path?
 
@@ -71,6 +72,7 @@ https://www.monster-dive.com/blog/web_creative/20180608_001789.php
 https://www.hypertextcandy.com/vuejs-components-introduction-environment-setting
 https://medium.com/js-dojo/vue-js-single-file-components-vue-cli-and-example-of-how-to-build-reusable-components-cf0991adbc2f
 https://qiita.com/tsuuuuu_san/items/1bdd6a6b396a1169fc82
+https://laracasts.com/discuss/channels/vue/how-to-add-atkeyup-globally-with-vue
 
 #### Usage of npm commands to build and start Vue application.
 
