@@ -276,3 +276,12 @@ https://askubuntu.com/questions/315408/open-terminal-with-multiple-tabs-and-exec
 rsync -av --exclude='*.tif' /hogehoge/tiffs /hogehoge2/nontiffs
 ```
 https://open-groove.net/linux-command/rsync-exclude/
+
+#### How to install PIP and Selenium?
+
+```
+$ sudo apt-get install python-pip
+$ sudo pip install selenium
+```
+
+https://askubuntu.com/questions/937770/how-to-install-and-set-up-selenium-webdriver-on-ubuntu-16-04
