@@ -307,3 +307,17 @@ RUN chmod 644 /etc/mysql/conf.d/disable_strict_mode.cnf
 And don't use `Volume:` from `docker-compose.yml`
 
 https://qiita.com/koyo-miyamura/items/4d1430b9086c5d4a58a5
+
+
+#### How to avoid failing npm run build in Docker?
+
+Set `NODE_ENV` after `npm install`.
+
+```
+RUN npm install
+
+ENV NODE_ENV=production
+RUN npm run build
+```
+
+http://packpak.hatenablog.com/entry/2018/09/16/100052
