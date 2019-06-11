@@ -57,3 +57,15 @@ Note:  What is Xvbf?
 Xvfb is a virtual display framebuffer for X - the display system used by Linux. It provides a fake display buffer for graphical programs to write to, thus allowing any program to run headlessly.Jan 9, 2015
 ```
 http://tobyho.com/2015/01/09/headless-browser-testing-xvfb/
+
+
+#### What is the workaround when an element is not clickable?
+
+Use JavaScript executor to directly click on an element.
+
+```
+WebElement ele = driver.findElement(By.xpath("element_xpath"));
+JavascriptExecutor executor = (JavascriptExecutor)driver;
+executor.executeScript("arguments[0].click();", ele);
+```
+https://stackoverflow.com/questions/44912203/selenium-web-driver-java-element-is-not-clickable-at-point-x-y-other-elem
