@@ -321,3 +321,65 @@ RUN npm run build
 ```
 
 http://packpak.hatenablog.com/entry/2018/09/16/100052
+
+#### How to write a Dockerfile with SSL enabled Tomcat8.5?
+
+`Dockerfile`
+
+```
+FROM tomcat:8.5
+
+RUN mkdir "$CATALINA_HOME/keystore"
+
+RUN keytool  -genkey -noprompt -trustcacerts -keyalg RSA -alias tomcat -dname  "CN=Unknown, OU=Unknown, O=Unknown, L=Unknown, ST=Unknown, C=Unknown" -keypass changeit -keystore "$CATALINA_HOME/keystore/.keystore" -storepass changeit
+
+COPY /config/server.xml "$CATALINA_HOME/conf/server.xml"
+COPY /config/tomcat-users.xml "$CATALINA_HOME/conf/tomcat-users.xml"
+COPY /config/manager.xml "$CATALINA_HOME/conf/Catalina/localhost/manager.xml"
+COPY /config/host-manager.xml "$CATALINA_HOME/conf/Catalina/localhost/host-manager.xml"
+
+
+EXPOSE 8443
+```
+http://palashray.com/tomcat-8-ssl-configuration-with-self-signed-certificate/
+https://github.com/paawak/blog/blob/master/code/apache-http-client/src/main/docker/Dockerfile
+
+#### How to enable Tomcat8.5's manager page?
+
+`manager.xml`
+
+````
+<Context privileged="true" antiResourceLocking="false" docBase="${catalina.home}/webapps/manager">
+    <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="^.*$" />
+</Context>
+````
+
+`host-manager.xml`
+
+````
+<Context privileged="true" antiResourceLocking="false" docBase="${catalina.home}/webapps/host-manager">
+    <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="^.*$" />
+</Context>
+````
+
+`tomcat-users.xml`
+
+````
+<?xml version='1.0' encoding='utf-8'?>
+
+<tomcat-users>
+  <role rolename="tomcat"/>
+  <role rolename="role1"/>
+  <role rolename="admin"/>
+  <role rolename="manager-script"/>
+  <role rolename="manager-gui"/>
+  <role rolename="manager-jmx"/>
+  <role rolename="manager-status"/>    
+  <user username="tomcat" password="tomcat" roles="tomcat"/>
+  <user username="both" password="tomcat" roles="tomcat,role1"/>
+  <user username="role1" password="tomcat" roles="role1"/>
+  <user username="admin" password="pass" roles="admin,manager,manager-script,manager-gui,manager-jmx,manager-status"/>
+</tomcat-users>
+````
+
+https://serverfault.com/questions/803899/unable-to-access-tomcat-8-host-manager-i-can-access-manager-app-just-fine
