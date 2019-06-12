@@ -21,4 +21,10 @@
 % update-alternatives --list java
 ```
 
+#### How to check certificate name and alias in keystore files?
 
+````
+% keytool -v -list -keystore .keystore
+````
+
+https://stackoverflow.com/questions/12893995/how-to-check-certificate-name-and-alias-in-keystore-files
