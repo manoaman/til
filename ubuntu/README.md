@@ -288,4 +288,15 @@ https://askubuntu.com/questions/937770/how-to-install-and-set-up-selenium-webdri
 
 #### Which application is using port 8080?
 
+Find out what process is using 8080.
+
+```
+% lsof -i :8080 | grep LISTEN
+% ps -ef | grep 10165
+```
+
+```
+% netstat -nlp | grep 8080
+```
+
 https://www.mkyong.com/linux/linux-which-application-is-using-port-8080/
