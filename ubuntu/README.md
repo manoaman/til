@@ -300,3 +300,11 @@ Find out what process is using 8080.
 ```
 
 https://www.mkyong.com/linux/linux-which-application-is-using-port-8080/
+
+
+#### How to update sudoers with NOPASSWD?
+
+```
+myuser ALL=(ALL) NOPASSWD:ALL
+```
+https://askubuntu.com/questions/334318/sudoers-file-enable-nopasswd-for-user-all-commands
