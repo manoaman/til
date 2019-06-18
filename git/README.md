@@ -71,3 +71,9 @@ git commit
 git push
 ```
 https://gbayer.com/development/moving-files-from-one-git-repository-to-another-preserving-history/
+
+#### How to remove a file from a repo?
+
+```
+git rm --cached somefile.txt
+```
