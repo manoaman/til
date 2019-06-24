@@ -142,3 +142,23 @@ Since you want to use GitLab Runner to automatically deploy the application, you
  </settings>
 ```
 https://docs.gitlab.com/ee/ci/examples/artifactory_and_gitlab/
+
+#### How to deploy on a remote server via ssh/scp?
+
+1. Set up `USER_PASS` in CI/CD settings in GitLab.
+2. `sshpass` will take the user pass and copy the files over.
+
+```
+deploy_job:
+  stage: deploy
+  only:
+    - development
+  script:
+    - sshpass -V
+    - export SSHPASS=$USER_PASS 
+    - sshpass -e ssh someuser@somehost.com "rm -f /directory/to/update/*"
+    - sshpass -e scp -o stricthostkeychecking=no ./dist/index.html someuser@somehost.com:/directory/to/update/
+    
+```
+
+https://medium.com/@hfally/a-gitlab-ci-config-to-deploy-to-your-server-via-ssh-43bf3cf93775
