@@ -5,5 +5,6 @@
 3. exacerbate --- 悪化させる,激化させる
 4. imbue --- 染み込ませる (imbue a person's mind with new ideas)
 5. zebra finch --- キンカチョウ
+6. full-fledged --- 本格的
 
 Equity compensation is non-cash pay that represents ownership in the firm. This type of compensation can take many forms, including options, restricted stock and performance shares.
