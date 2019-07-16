@@ -162,3 +162,9 @@ deploy_job:
 ```
 
 https://medium.com/@hfally/a-gitlab-ci-config-to-deploy-to-your-server-via-ssh-43bf3cf93775
+
+#### How to set up max timeout on running a job?
+
+By default, it is `60 minutes`.
+
+Settings ---> CI/CD ---> General Pipelines ---> Timeout
