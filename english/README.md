@@ -7,5 +7,6 @@
 5. zebra finch --- キンカチョウ
 6. full-fledged --- 本格的
 7. convolutional --- 畳み込み（積分）
+8. vex --- イライラさせる
 
 Equity compensation is non-cash pay that represents ownership in the firm. This type of compensation can take many forms, including options, restricted stock and performance shares.
