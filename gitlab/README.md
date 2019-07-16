@@ -168,3 +168,5 @@ https://medium.com/@hfally/a-gitlab-ci-config-to-deploy-to-your-server-via-ssh-4
 By default, it is `60 minutes`.
 
 Settings ---> CI/CD ---> General Pipelines ---> Timeout
+
+https://docs.gitlab.com/ee/ci/runners/#setting-maximum-job-timeout-for-a-runner
