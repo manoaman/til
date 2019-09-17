@@ -15,5 +15,6 @@
 13. piggyback --- 便乗する
 14. precursor --- 前駆体
 15. vicinity --- 近傍
+16. subsidize --- 補助金
 
 Equity compensation is non-cash pay that represents ownership in the firm. This type of compensation can take many forms, including options, restricted stock and performance shares.
