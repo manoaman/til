@@ -16,3 +16,9 @@
 ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29})
 ```
 https://www.kenst.com/2015/03/installing-chromedriver-on-mac-osx/
+
+#### How to diagnose WiFi connection on Mac?
+
+`alt + (click on the WiFi menu)`
+
+https://support.apple.com/en-us/HT202663#howto
