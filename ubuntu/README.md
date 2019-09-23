@@ -340,3 +340,9 @@ a@A:~> ssh b@B
 ```
 
 http://www.linuxproblem.org/art_9.html
+
+#### What do you do when the terminal doesn't launch?
+
+Install `xterm` and check if `/var/log/syslog` has something.
+
+https://qiita.com/TaroNakasendo/items/974c5a4de6b6ad566224
