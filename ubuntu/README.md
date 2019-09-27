@@ -346,3 +346,23 @@ http://www.linuxproblem.org/art_9.html
 Install `xterm` and check if `/var/log/syslog` has something.
 
 https://qiita.com/TaroNakasendo/items/974c5a4de6b6ad566224
+
+#### How to check Tomcat version?
+
+```
+% /usr/share/tomcat8/bin/version.sh 
+/usr/share/tomcat8/bin/catalina.sh: 1: /usr/share/tomcat8/bin/setenv.sh: JAVA_OPTS: not found
+Using CATALINA_BASE:   /usr/share/tomcat8
+Using CATALINA_HOME:   /usr/share/tomcat8
+Using CATALINA_TMPDIR: /usr/share/tomcat8/temp
+Using JRE_HOME:        /usr
+Using CLASSPATH:       /usr/share/tomcat8/bin/bootstrap.jar:/usr/share/tomcat8/bin/tomcat-juli.jar
+Server version: Apache Tomcat/8.0.32 (Ubuntu)
+Server built:   Dec 10 2018 14:08:07 UTC
+Server number:  8.0.32.0
+OS Name:        Linux
+OS Version:     4.4.0-130-generic
+Architecture:   amd64
+JVM Version:    1.8.0_212-8u212-b03-0ubuntu1.16.04.1-b03
+JVM Vendor:     Oracle Corporation
+```
