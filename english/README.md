@@ -19,5 +19,6 @@
 17. imho (in my humble opinion) --- 私見では
 18. no-brainer --- 非常に簡単、考える必要のない
 19. nascent years --- 新生年
+20. et al. (and others) --- その他（論文などで著作者以外を指す時に使う。）
 
 Equity compensation is non-cash pay that represents ownership in the firm. This type of compensation can take many forms, including options, restricted stock and performance shares.
