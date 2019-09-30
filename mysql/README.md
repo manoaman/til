@@ -41,3 +41,12 @@ LINES TERMINATED BY '\n';
 `/var/lib/mysql-files/` is where files can be written on the server.
 
 https://stackoverflow.com/questions/356578/how-to-output-mysql-query-results-in-csv-format
+
+
+#### Workaround for missing definer?
+
+Option 1. Create the user.
+Option 2. Change the current definer to someone else.
+
+
+https://stackoverflow.com/questions/10169960/mysql-error-1449-the-user-specified-as-a-definer-does-not-exist
