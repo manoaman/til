@@ -163,3 +163,12 @@ $ vue init webpack myproject
 $ npm run build
 ```
 And copy index.html and /dist/ folder into your website root directory. Done.
+
+
+# Vue 3D Model
+
+https://qiita.com/kingyo222/items/ae261d40d7e047d71ac1
+https://github.com/mrdoob/model-tag/find/master
+https://github.com/hujiulong/vue-3d-model
+https://hujiulong.github.io/vue-3d-model/#/demo-ply
+
