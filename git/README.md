@@ -77,3 +77,10 @@ https://gbayer.com/development/moving-files-from-one-git-repository-to-another-p
 ```
 git rm --cached somefile.txt
 ```
+
+
+#### How to get the remote URL of the Git server?
+
+```
+git config --get remote.origin.url
+```
