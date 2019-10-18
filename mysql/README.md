@@ -50,3 +50,9 @@ Option 2. Change the current definer to someone else.
 
 
 https://stackoverflow.com/questions/10169960/mysql-error-1449-the-user-specified-as-a-definer-does-not-exist
+
+#### How to restore database from ".sql.gz" file?
+
+```
+% zcat hogehoge.sql.gz | mysql -u root -p hogedataase
+```
