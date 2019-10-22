@@ -84,3 +84,9 @@ git rm --cached somefile.txt
 ```
 git config --get remote.origin.url
 ```
+
+#### How to undo git add?
+
+```
+git reset <filename>
+```
