@@ -90,3 +90,18 @@ git config --get remote.origin.url
 ```
 git reset <filename>
 ```
+
+#### How to rename a tag?
+
+```
+git tag new old
+git tag -d old
+git push origin :refs/tags/old
+git push --tags
+```
+
+Finally, make sure that the other users remove the deleted tag. Please tell them (co-workers) to run the following command:
+
+```
+git pull --prune --tags
+```
