@@ -383,3 +383,13 @@ https://github.com/paawak/blog/blob/master/code/apache-http-client/src/main/dock
 ````
 
 https://serverfault.com/questions/803899/unable-to-access-tomcat-8-host-manager-i-can-access-manager-app-just-fine
+
+#### How to rebuild an image and start one service from docker-compose?
+
+```
+$docker-compose up -d --no-deps --build <service_name>
+--no-deps - Don't start linked services.
+
+--build - Build images before starting containers.
+```
+https://stackoverflow.com/questions/36884991/how-to-rebuild-docker-container-in-docker-compose-yml
