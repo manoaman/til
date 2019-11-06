@@ -85,3 +85,13 @@ Comment this valve in `/usr/local/tomcat/conf/context.xml`.
   <Manager sessionAttributeValueClassNameFilter="java\.lang\.(?:Boolean|Integer|Long|Number|String)|org\.apache\.catalina\.filters\.CsrfPreventionFilter\$LruCache(?:\$1)?|java\.util\.(?:Linked)?HashMap"/>
 </Context>
 ```
+
+#### How to fix a Dockerfile where Tomcat Docker is failing to get gpg_keys from the default keyserver?
+
+Replace a line to use a different keyserver location.
+
+```
+		gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys "$key"; \
+```
+
+
