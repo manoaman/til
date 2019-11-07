@@ -393,3 +393,10 @@ $docker-compose up -d --no-deps --build <service_name>
 --build - Build images before starting containers.
 ```
 https://stackoverflow.com/questions/36884991/how-to-rebuild-docker-container-in-docker-compose-yml
+
+#### How to stop/remove docker containers at once?
+
+```
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+```
