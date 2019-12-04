@@ -400,3 +400,11 @@ https://stackoverflow.com/questions/36884991/how-to-rebuild-docker-container-in-
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 ```
+
+#### How to install vim on Alpine Docker?
+
+```
+RUN apt-get update && apt-get install vim -y &&
+ apt-get install nmap -y
+```
+https://forums.docker.com/t/install-vim-in-docker-container-on-creation/60296
