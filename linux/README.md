@@ -68,4 +68,12 @@ fi
 ```
 https://en.wikipedia.org/wiki/Cron
 
+#### How to count CPU cores?
+
+```
+grep -c ^processor /proc/cpuinfo    
+```
+
+https://stackoverflow.com/questions/6481005/how-to-obtain-the-number-of-cpus-cores-in-linux-from-the-command-line
+
 
