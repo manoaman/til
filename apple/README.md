@@ -34,3 +34,5 @@ https://support.apple.com/en-us/HT202663#howto
 hw.memsize: 8589934592
 
 ```
+
+https://serverfault.com/questions/112711/how-can-i-get-cpu-count-and-total-ram-from-the-os-x-command-line
