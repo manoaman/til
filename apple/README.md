@@ -22,3 +22,15 @@ https://www.kenst.com/2015/03/installing-chromedriver-on-mac-osx/
 `alt + (click on the WiFi menu)`
 
 https://support.apple.com/en-us/HT202663#howto
+
+
+#### How to count CPU cores and RAM size from terminal?
+
+```
+% sysctl -n hw.ncpu
+4
+
+% sysctl hw.memsize
+hw.memsize: 8589934592
+
+```
