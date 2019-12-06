@@ -83,3 +83,14 @@ https://stackoverflow.com/questions/6481005/how-to-obtain-the-number-of-cpus-cor
 
 ```
 https://askubuntu.com/questions/420981/how-do-i-save-terminal-output-to-a-file
+
+#### How do I run graphical programs remotely from a Linux server?
+
+1. Install XQuartz on your Mac, which is the official X server software for Mac
+2. Run Applications > Utilities > XQuartz.app
+3. Right click on the XQuartz icon in the dock and select Applications > Terminal.  This should bring up a new xterm terminal windows.
+4. ssh in
+
+https://uisapp2.iu.edu/confluence-prd/pages/viewpage.action?pageId=280461906
+https://www.xquartz.org/
+https://unix.stackexchange.com/questions/9870/how-do-i-work-with-gui-tools-over-a-remote-server
