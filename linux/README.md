@@ -96,3 +96,26 @@ https://uisapp2.iu.edu/confluence-prd/pages/viewpage.action?pageId=280461906
 https://www.xquartz.org/
 
 https://unix.stackexchange.com/questions/9870/how-do-i-work-with-gui-tools-over-a-remote-server
+
+#### How to use duc to look at disk space usage?
+
+https://duc.zevv.nl/
+
+Index
+```
+$ duc index /usr
+```
+
+List all the files and tree views
+```
+$ duc ls -Fg /usr/local
+
+$ duc ls -R /usr/local
+```
+
+GUI
+```
+$ duc gui /usr/local
+```
+
+
