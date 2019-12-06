@@ -76,4 +76,10 @@ grep -c ^processor /proc/cpuinfo
 
 https://stackoverflow.com/questions/6481005/how-to-obtain-the-number-of-cpus-cores-in-linux-from-the-command-line
 
+#### How to output in stderr and output in a file and the console?
 
+```
+% SomeCommand 2>&1 | tee SomeFile.txt
+
+```
+https://askubuntu.com/questions/420981/how-do-i-save-terminal-output-to-a-file
