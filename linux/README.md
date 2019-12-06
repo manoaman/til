@@ -92,5 +92,7 @@ https://askubuntu.com/questions/420981/how-do-i-save-terminal-output-to-a-file
 4. ssh in
 
 https://uisapp2.iu.edu/confluence-prd/pages/viewpage.action?pageId=280461906
+
 https://www.xquartz.org/
+
 https://unix.stackexchange.com/questions/9870/how-do-i-work-with-gui-tools-over-a-remote-server
