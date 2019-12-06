@@ -118,4 +118,4 @@ GUI
 $ duc gui /usr/local
 ```
 
-
+https://htmlpreview.github.io/?https://github.com/zevv/duc/blob/master/doc/duc.1.html#EXAMPLES
