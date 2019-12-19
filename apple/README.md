@@ -36,3 +36,10 @@ hw.memsize: 8589934592
 ```
 
 https://serverfault.com/questions/112711/how-can-i-get-cpu-count-and-total-ram-from-the-os-x-command-line
+
+
+#### How to delete old back ups from TimeMachine?
+
+```
+tmutil delete /Volumes/BackupDriveName/Backups.backupdb/MacComputerName/YYYY-MM-DD-HHMMSS/
+```
