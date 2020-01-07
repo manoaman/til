@@ -76,3 +76,7 @@ pages:
     - development
 
 ```
+
+3. Check GitLab Pages
+
+Go to provided URL to the GitLab pages by looking at Settings-Pages-Access Pages.  If Pages is not accessible, ask system admin to set it up.
