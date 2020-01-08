@@ -105,3 +105,10 @@ Finally, make sure that the other users remove the deleted tag. Please tell them
 ```
 git pull --prune --tags
 ```
+
+#### How to mirror a repo to another server?
+
+```
+git remote add hogehoge https://username@github.com/username/hogehoge.git
+git push --mirror hogehoge
+```
