@@ -44,3 +44,17 @@ for key in sorted(mydict.keys()):
     print("%s: %s" % (key, mydict[key]))
 ```
 https://www.saltycrane.com/blog/2007/09/how-to-sort-python-dictionary-by-keys/
+
+---
+
+#### PIP
+
+List, instal, and uninstall
+
+```
+% pip list
+% pip install <module>
+% pip uninstall <module>
+```
+
+
