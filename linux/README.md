@@ -119,3 +119,12 @@ $ duc gui /usr/local
 ```
 
 https://htmlpreview.github.io/?https://github.com/zevv/duc/blob/master/doc/duc.1.html#EXAMPLES
+
+
+#### How to mount/unmount an external hard drive?
+
+```
+% sudo fdisk -l
+% sudo mount /dev/sdxn /mnt
+% sudo umount /mnt
+```
