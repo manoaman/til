@@ -128,3 +128,8 @@ https://htmlpreview.github.io/?https://github.com/zevv/duc/blob/master/doc/duc.1
 % sudo mount /dev/sdxn /mnt
 % sudo umount /mnt
 ```
+Kill the process if mount is used.
+
+```
+% sudo fuser -km /mnt
+```
