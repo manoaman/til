@@ -43,3 +43,21 @@ https://serverfault.com/questions/112711/how-can-i-get-cpu-count-and-total-ram-f
 ```
 tmutil delete /Volumes/BackupDriveName/Backups.backupdb/MacComputerName/YYYY-MM-DD-HHMMSS/
 ```
+
+#### How to allow a remote computer to access your Mac
+
+>Set up Remote Login on your Mac
+>On your Mac, choose Apple menu  > System Preferences, click Sharing, then select Remote Login.
+
+>Select the Remote Login checkbox.
+
+>Selecting Remote Login also enables the secure FTP (sftp) service.
+
+>Specify which users can log in:
+
+>All users: Any of your computer’s users and anyone on your network can log in.
+
+>Only these users: Click the Add button , then choose who can log in remotely. Users & Groups includes all the users of your Mac. Network Users and Network Groups include people on your network.
+
+https://support.apple.com/guide/mac-help/allow-a-remote-computer-to-access-your-mac-mchlp1066/mac
+
