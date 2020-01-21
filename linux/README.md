@@ -72,6 +72,21 @@ Cron format online tester:
 
 http://cron.schlitt.info/
 
+#### How to debug and check if cron is working?
+
+
+Check the log
+```
+sleep 60; grep crontab /var/log/syslog | tail
+```
+https://serverfault.com/questions/43733/is-there-a-way-to-validate-etc-crontab-s-format
+
+```
+/usr/local/bin/some_script.sh >> /tmp/cron.out
+```
+
+https://stackoverflow.com/questions/13280699/crontab-is-not-running-my-script/13285588
+
 #### How to count CPU cores?
 
 ```
