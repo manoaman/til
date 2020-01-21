@@ -190,3 +190,14 @@ https://thegeeksalive.com/how-to-find-the-inode-usage-on-linux/
 ```
 https://stackoverflow.com/questions/4585929/how-to-use-cp-command-to-exclude-a-specific-directory
 https://unix.stackexchange.com/questions/368210/how-to-rsync-multiple-source-folders
+
+#### How to get hardware spec?
+
+```
+% uname
+% lshw -short
+% lscpu
+% lsblk
+```
+
+https://vitux.com/get-linux-system-and-hardware-details-on-the-command-line/
