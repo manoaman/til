@@ -166,3 +166,16 @@ If you need to transfer files larger than 4 GB between Macs and PCs: Use exFAT.
 In all other cases: Use MS-DOS (FAT), aka FAT32.
 ```
 https://www.engadget.com/2011/09/19/mac-101-format-choices-for-usb-flash-drives/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAEUslRePgVafLCIxwjto5VUkeo1NDwA3-CItjI0qZgVzayM6Aan9Ku8rvAAxq0VvCkixXdY-URkAy9zF5nGeOnm5xoFIwqdxQsl_-4DwtnZeEyAitgClxcxLWU_2FkB9ov4AKpn23zcGSe1E51hqYybUqyF48GG9Ru6EUgiCq2kS
+
+
+#### inode limit issue on Ubuntu
+
+```
+% df -i
+% for dir in `ll|grep ^d|grep -v "\./"|awk '{print $9}'`; do echo `sudo find ./$dir -true|wc -l` `pwd`/$dir; done | sort -nr
+% sudo apt-get autoremove
+```
+
+https://qiita.com/kyrieleison/items/74b0a1035494b5885e05
+http://lab.astamuse.co.jp/entry/2018/03/15/114500
+https://thegeeksalive.com/how-to-find-the-inode-usage-on-linux/
