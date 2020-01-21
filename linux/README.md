@@ -68,6 +68,10 @@ fi
 ```
 https://en.wikipedia.org/wiki/Cron
 
+Cron format online tester:
+
+http://cron.schlitt.info/
+
 #### How to count CPU cores?
 
 ```
