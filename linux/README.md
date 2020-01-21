@@ -133,3 +133,14 @@ Kill the process if mount is used.
 ```
 % sudo fuser -km /mnt
 ```
+
+#### USB drive format choices
+
+```
+If you absolutely, positively will only be working with Macs and no other system, ever: Use Mac OS Extended (Journaled).
+
+If you need to transfer files larger than 4 GB between Macs and PCs: Use exFAT.
+
+In all other cases: Use MS-DOS (FAT), aka FAT32.
+```
+https://www.engadget.com/2011/09/19/mac-101-format-choices-for-usb-flash-drives/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAEUslRePgVafLCIxwjto5VUkeo1NDwA3-CItjI0qZgVzayM6Aan9Ku8rvAAxq0VvCkixXdY-URkAy9zF5nGeOnm5xoFIwqdxQsl_-4DwtnZeEyAitgClxcxLWU_2FkB9ov4AKpn23zcGSe1E51hqYybUqyF48GG9Ru6EUgiCq2kS
