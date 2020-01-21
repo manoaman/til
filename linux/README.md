@@ -72,6 +72,9 @@ Cron format online tester:
 
 http://cron.schlitt.info/
 
+Cron on Mac:
+https://medium.com/better-programming/https-medium-com-ratik96-scheduling-jobs-with-crontab-on-macos-add5a8b26c30
+
 #### How to debug and check if cron is working?
 
 
