@@ -408,3 +408,9 @@ RUN apt-get update && apt-get install vim -y &&
  apt-get install nmap -y
 ```
 https://forums.docker.com/t/install-vim-in-docker-container-on-creation/60296
+
+#### How to fix "max depth error" error?
+
+Clean up docker images and volumes
+
+https://blog.websandbag.com/entry/2018/05/15/235514
