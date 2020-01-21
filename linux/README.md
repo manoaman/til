@@ -179,3 +179,14 @@ https://www.engadget.com/2011/09/19/mac-101-format-choices-for-usb-flash-drives/
 https://qiita.com/kyrieleison/items/74b0a1035494b5885e05
 http://lab.astamuse.co.jp/entry/2018/03/15/114500
 https://thegeeksalive.com/how-to-find-the-inode-usage-on-linux/
+
+
+#### How to copy and exclude multiple directories/files?
+
+```
+% rsync -av --progress sourcefolder /destinationfolder --exclude thefoldertoexclude
+
+% rsync -a /etc/fstab /home/user/download bkp
+```
+https://stackoverflow.com/questions/4585929/how-to-use-cp-command-to-exclude-a-specific-directory
+https://unix.stackexchange.com/questions/368210/how-to-rsync-multiple-source-folders
