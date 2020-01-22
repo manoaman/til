@@ -201,3 +201,16 @@ https://unix.stackexchange.com/questions/368210/how-to-rsync-multiple-source-fol
 ```
 
 https://vitux.com/get-linux-system-and-hardware-details-on-the-command-line/
+
+#### How to install Glances and monitor with web gui?
+
+```
+% sudo apt install glances python-bottle	#Debian/Ubuntu
+% sudo pip install bottle
+% glances -w &
+
+http://SERVER_IP:61208/
+```
+
+
+https://www.tecmint.com/glances-monitor-remote-linux-in-web-server-mode/
