@@ -1,6 +1,12 @@
 ### Linux
 
 
+#### How to find a file?
+
+```
+find / -name abc.dmg
+```
+
 #### How to list directories?
 
 ```
