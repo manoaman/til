@@ -162,6 +162,18 @@ Kill the process if mount is used.
 % sudo fuser -km /mnt
 ```
 
+#### How to mount unmountable external drive?
+
+Check fsck is runng.
+
+```
+% ps aux | grep fsck
+
+% sudo kill -9 xxxx
+(% sudo pkill -f fsck)
+```
+https://apple.stackexchange.com/questions/268998/external-hard-drive-wont-mount
+
 #### USB drive format choices
 
 ```
