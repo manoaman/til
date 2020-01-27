@@ -112,3 +112,17 @@ git pull --prune --tags
 git remote add hogehoge https://username@github.com/username/hogehoge.git
 git push --mirror hogehoge
 ```
+
+#### How to push a new local branch to a remote Git repository and track it too?
+
+1. Create a new branch:
+```
+git checkout -b feature_branch_name
+```
+
+2. Edit, add and commit your files.
+
+3. Push your branch to the remote repository:
+```
+git push -u origin feature_branch_name
+```
