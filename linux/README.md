@@ -239,5 +239,8 @@ https://vitux.com/get-linux-system-and-hardware-details-on-the-command-line/
 http://SERVER_IP:61208/
 ```
 
-
 https://www.tecmint.com/glances-monitor-remote-linux-in-web-server-mode/
+
+#### What are rsync options?
+
+https://linux.die.net/man/1/rsync
