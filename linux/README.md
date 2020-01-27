@@ -243,4 +243,10 @@ https://www.tecmint.com/glances-monitor-remote-linux-in-web-server-mode/
 
 #### What are rsync options?
 
+```
+-a, --archive           archive mode; equals -rlptgoD (no -H,-A,-X)
+--progress              show progress during transfer
+-P                      same as --partial --progress
+```
+
 https://linux.die.net/man/1/rsync
