@@ -250,3 +250,21 @@ https://www.tecmint.com/glances-monitor-remote-linux-in-web-server-mode/
 ```
 
 https://linux.die.net/man/1/rsync
+
+#### How to list numeric folder names?
+
+```
+find . -type d -regextype sed -regex ".*/[0-9]"
+```
+
+#### How to list numeric folder names and get rid of paths?
+
+```
+find . -type d -regextype sed -regex ".*/[0-9]" | rev | cut -d '/' -f 1
+```
+
+#### How to list numeric folder names, get rid of paths, and comma separate?
+
+```
+find . -type d -regextype sed -regex ".*/[0-9]" | rev | cut -d '/' -f 1 | sed 's/^\|$/"/g'|paste -sd, -
+```
