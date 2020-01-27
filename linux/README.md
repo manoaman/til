@@ -149,7 +149,7 @@ $ duc gui /usr/local
 https://htmlpreview.github.io/?https://github.com/zevv/duc/blob/master/doc/duc.1.html#EXAMPLES
 
 
-#### How to mount/unmount an external hard drive?
+#### How to mount an external hard drive?
 
 ```
 % sudo fdisk -l
@@ -161,6 +161,15 @@ Kill the process if mount is used.
 ```
 % sudo fuser -km /mnt
 ```
+
+#### How to unmount?
+
+```
+% umount -l /PATH/OF/BUSY-DEVICE
+% umount -f /PATH/OF/BUSY-NFS(NETWORK-FILE-SYSTEM)
+```
+
+https://askubuntu.com/questions/867719/umount-target-is-busy
 
 #### How to mount unmountable external drive?
 
