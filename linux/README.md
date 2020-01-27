@@ -268,3 +268,8 @@ find . -type d -regextype sed -regex ".*/[0-9]" | rev | cut -d '/' -f 1
 ```
 find . -type d -regextype sed -regex ".*/[0-9]" | rev | cut -d '/' -f 1 | sed 's/^\|$/"/g'|paste -sd, -
 ```
+
+https://stackoverflow.com/questions/15105029/search-find-a-folder-that-has-a-name-with-integer-numbers-in-linux-from-terminal
+https://stackoverflow.com/questions/22727107/how-to-find-the-last-field-using-cut/22727211
+https://unix.stackexchange.com/questions/338116/turning-separate-lines-into-a-comma-separated-list-with-quoted-entries
+
