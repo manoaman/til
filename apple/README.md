@@ -43,6 +43,7 @@ https://serverfault.com/questions/112711/how-can-i-get-cpu-count-and-total-ram-f
 ```
 tmutil delete /Volumes/BackupDriveName/Backups.backupdb/MacComputerName/YYYY-MM-DD-HHMMSS/
 ```
+http://osxdaily.com/2015/07/27/delete-old-backups-time-machine-mac/
 
 #### How to allow a remote computer to access your Mac
 
