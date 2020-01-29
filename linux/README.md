@@ -273,3 +273,9 @@ https://stackoverflow.com/questions/15105029/search-find-a-folder-that-has-a-nam
 https://stackoverflow.com/questions/22727107/how-to-find-the-last-field-using-cut/22727211
 https://unix.stackexchange.com/questions/338116/turning-separate-lines-into-a-comma-separated-list-with-quoted-entries
 
+#### How to determine the “age” of a linux system since installation?
+
+```
+% tune2fs -l /dev/sda1 | grep created
+```
+https://serverfault.com/questions/221377/how-to-determine-the-age-of-a-linux-system-since-installation
