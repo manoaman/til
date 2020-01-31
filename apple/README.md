@@ -62,3 +62,7 @@ http://osxdaily.com/2015/07/27/delete-old-backups-time-machine-mac/
 
 https://support.apple.com/guide/mac-help/allow-a-remote-computer-to-access-your-mac-mchlp1066/mac
 
+
+#### How to identify undeeded files in Mac?
+
+https://macpaw.com/how-to/clean-up-mac
