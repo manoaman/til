@@ -128,3 +128,17 @@ git push -u origin feature_branch_name
 ```
 
 https://www.freecodecamp.org/forum/t/push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too/13222
+
+#### How to fix "repository not found" error in Mac?
+
+Remove git keys from keychain.
+
+https://hacknote.jp/archives/29262/
+
+```
+$ git pull
+remote: Repository not found.
+fatal: repository 'https://github.com/YOUR_REPO.git/' not found
+```
+
+https://hacknote.jp/archives/29262/
