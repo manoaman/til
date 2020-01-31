@@ -66,3 +66,8 @@ https://support.apple.com/guide/mac-help/allow-a-remote-computer-to-access-your-
 #### How to identify undeeded files in Mac?
 
 https://macpaw.com/how-to/clean-up-mac
+
+#### How to identify throttled network?
+
+https://www.vpnuniversity.com/learn/isp-throttling
+http://internethealthtest.org/
