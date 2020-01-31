@@ -30,6 +30,7 @@ https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-his
 git remote set-url origin new.git.url/here
 ```
 https://stackoverflow.com/questions/2432764/how-to-change-the-uri-url-for-a-remote-git-repository
+https://linuxize.com/post/how-to-change-git-remote-url/
 
 
 #### How to revert the current commit?
