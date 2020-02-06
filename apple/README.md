@@ -71,3 +71,27 @@ https://macpaw.com/how-to/clean-up-mac
 
 https://www.vpnuniversity.com/learn/isp-throttling
 http://internethealthtest.org/
+
+
+#### Everything about homebrew
+
+0. Install homebrew
+
+```
+% /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+1. Diagnose
+
+```
+% brew doctor
+```
+
+2. Update
+
+```
+% brew update
+```
+
+
+https://qiita.com/omega999/items/6f65217b81ad3fffe7e6
