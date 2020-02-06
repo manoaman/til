@@ -1,11 +1,17 @@
 ### Ansible stuffs
 
-Set up VirtualBox
+1. Set up VirtualBox
 
 ```
 % /Applications/VirtualBox.app/Contents/MacOS/VBoxManage -v
 
 6.0.12r133076
+```
+
+2. Install vagrant
+
+```
+% brew cask install vagrant
 ```
 
 ### Vargrant
@@ -18,4 +24,5 @@ Set up VirtualBox
 % vagrant destroy
 ```
 
+https://medium.com/@JohnFoderaro/macos-sierra-vagrant-quick-start-guide-2b8b78913be3
 https://www.vagrantup.com/intro/getting-started/teardown.html
