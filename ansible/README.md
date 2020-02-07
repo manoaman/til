@@ -1,4 +1,4 @@
-### Ansible stuffs
+### Set up VirutalBox and Vagrant
 
 1. Set up VirtualBox
 
@@ -12,9 +12,59 @@
 
 ```
 % brew cask install vagrant
+% vagrant -v
 ```
 
-### Vargrant
+3. Add a box
+
+```
+% vagrant box add centos6.7 https://github.com/CommanderK5/packer-centos-template/releases/download/0.6.7/vagrant-centos-6.7.box
+```
+
+4. Start vagrant
+
+```
+% vagrant up
+% vagrant status
+```
+
+### Set up Ansible
+
+1. SSH into controller
+
+```
+% vagrant ssh
+```
+
+2. Install Ansible
+
+```
+% yum install ansible
+```
+
+3. Generate SSH key and send the public key
+
+* Create an empty password
+```
+% ssh-keygen -t rsa
+```
+
+4. Copy a public key
+
+```
+% ssh-copy-id -i ~/.ssh/id_rsa.pub root@192.168.100.20
+```
+
+5. And try ssh again
+
+```
+% ssh 'root@192.168.100.20'
+```
+
+https://qiita.com/t_nakayama0714/items/fe55ee56d6446f67113c
+
+
+### Vargrant commands
 
 ```
 % vagrant init
@@ -24,7 +74,17 @@
 % vagrant destroy
 ```
 
+### What to do if Vagrant cannot be installed?
+
+```
+% sudo sed -i "s/mirrorlist=https/mirrorlist=http/" /etc/yum.repos.d/epel.repo
+% yum install ansible
+```
+$ sudo sed -i "s/mirrorlist=https/mirrorlist=http/" /etc/yum.repos.d/epel.repo
+
+
+### Resources
+
 https://medium.com/@JohnFoderaro/macos-sierra-vagrant-quick-start-guide-2b8b78913be3
 https://www.vagrantup.com/intro/getting-started/teardown.html
-
 https://qiita.com/andrew954/items/1d9f460558da7b84768f
