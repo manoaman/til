@@ -26,3 +26,5 @@
 
 https://medium.com/@JohnFoderaro/macos-sierra-vagrant-quick-start-guide-2b8b78913be3
 https://www.vagrantup.com/intro/getting-started/teardown.html
+
+https://qiita.com/andrew954/items/1d9f460558da7b84768f
