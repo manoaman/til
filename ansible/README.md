@@ -63,6 +63,34 @@
 
 https://qiita.com/t_nakayama0714/items/fe55ee56d6446f67113c
 
+### Try out Ansible
+
+1. Create `hosts` file in controller
+
+```
+% ssh 'root@192.168.100.20'
+
+% mkdir ansible    ----> /home/vagrant/ansible
+% cd ansible
+
+% mkdir inventory
+```
+
+2. Add target to `hosts`
+```
+% 192.168.100.20 ansible_user=root
+```
+
+3. Test ping
+```
+% ansible all -i inventory/hosts -m ping
+```
+
+for debugging
+
+```
+% ansible all -i inventory/hosts -m ping -vvvv
+```
 
 ### Vargrant commands
 
