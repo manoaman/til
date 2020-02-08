@@ -65,7 +65,7 @@ https://qiita.com/t_nakayama0714/items/fe55ee56d6446f67113c
 
 ### Try out Ansible
 
-1. Create `hosts` file in controller
+1. Create an inventory file (`hosts`) in controller
 
 ```
 % ssh 'root@192.168.100.20'
@@ -90,6 +90,42 @@ for debugging
 
 ```
 % ansible all -i inventory/hosts -m ping -vvvv
+```
+
+### Ansible Playbook
+
+1. Test Playbook
+
+```
+% ansible-playbook -i inventory/hosts test.yml
+```
+
+`targets.yml`
+
+```
+message: "Hello Ansible !"
+
+fruits:
+  apples:
+    amount: 10
+  bananas:
+    amount: 20
+  oranges:
+    amount: 30
+```
+
+`test.yml` (Playbook)
+
+```
+- hosts: targets
+  user: root
+  tasks:
+    - name: output message.
+      debug: msg="{{ message }}"
+
+    - name: output fruits
+      debug: msg="We want {{ item.value.amount }} {{ item.key }} !"
+      with_dict: "{{ fruits }}"
 ```
 
 ### Vargrant commands
