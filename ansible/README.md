@@ -177,9 +177,17 @@ We want {{ value.amount }} {{ key }} !
 
 ```
 % ansible-playbook --check -i inventory/hosts main.yml
+
+or 
+
+% ansible-playbook --check -i inventory/hosts main.yml -vvv
 ```
 
+4. Run
 
+```
+% ansible-playbook -i inventory/hosts main.yml
+```
 
 ### Vargrant commands
 
