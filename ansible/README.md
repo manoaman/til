@@ -128,6 +128,59 @@ fruits:
       with_dict: "{{ fruits }}"
 ```
 
+2. Do some real stuffs
+
+`main.yml` (Playbook)
+
+```
+- hosts: targets
+  user: root
+  tasks:
+  - name: install packages from yum
+    yum: name={{ item }} state=latest
+    with_items:
+      - jq
+      - ruby
+      - httpd
+
+  - name: register cron job
+    cron: name="check ping" day="*/2" hour="12" minute="0" job="ping -c 3 192.168.100.10"
+
+  - name: create directories
+    file: path={{ item.path }} owner={{ item.owner }} group={{ item.group }} mode=0{{ item.mode }} state=directory
+    with_items:
+      - { "path":"/opt/ansible", "owner":"root", "group":"root", "mode":"755" }
+      - { "path":"/opt/vagrant", "owner":"vagrant", "group":"vagrant", "mode":"755" }
+
+  - name: copy files
+    copy: src=./files/hoge dest=/opt/ansible/hoge owner=root group=root mode=0755
+
+  - name: copy template files
+    template: src=./templates/fuga.j2 dest=/opt/ansible/fuga owner=root group=root mode=0755
+```
+
+`fuga.j2` (Jinja)
+
+```
+This is a jinja template file.
+
+{{ message }}
+
+jinja template can extract variables. like, ...
+
+{% for key,value in fruits.iteritems() %}
+We want {{ value.amount }} {{ key }} !
+{% endfor %}
+```
+
+3. Dry run with check mode
+
+```
+% ansible-playbook --check -i inventory/hosts main.yml
+```
+
+
+
 ### Vargrant commands
 
 ```
