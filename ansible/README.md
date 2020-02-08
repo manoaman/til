@@ -189,6 +189,25 @@ or
 % ansible-playbook -i inventory/hosts main.yml
 ```
 
+### Ansible roles
+
+`master.yml`
+```
+- hosts: targets
+  user: root
+  tasks:
+  - name: register cron job
+    cron: name="check ping" day="*/2" hour="12" minute="0" job="ping -c 3 192.168.100.10"
+
+  roles:
+  - role-common
+  - role-web
+```
+
+```
+% ansible-playbook --check -i inventory/hosts master.yml
+```
+
 ### Vargrant commands
 
 ```
