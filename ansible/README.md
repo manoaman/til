@@ -228,10 +228,18 @@ or
 $ sudo sed -i "s/mirrorlist=https/mirrorlist=http/" /etc/yum.repos.d/epel.repo
 
 
-### What is Ansible inventory file?
+### What is a Ansible inventory file?
 
 > The Ansible inventory file defines the hosts and groups of hosts upon which commands, modules, and tasks in a playbook operate.
 
+
+### What is a Ansible playbook file?
+
+> An Ansible playbook is an organized unit of scripts that defines work for a server configuration managed by the automation tool Ansible. Ansible is a configuration management tool that automates the configuration of multiple servers by the use of Ansible playbooks.
+
+### What is Vagrant mainly used for?
+
+> Vagrant is a tool for building and managing virtual machine environments in a single workflow. With an easy-to-use workflow and focus on automation, Vagrant lowers development environment setup time, increases production parity, and makes the "works on my machine" excuse a relic of the past.
 
 ### Resources
 
