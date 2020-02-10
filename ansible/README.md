@@ -78,7 +78,8 @@ https://qiita.com/t_nakayama0714/items/fe55ee56d6446f67113c
 
 2. Add target to `hosts`
 ```
-% 192.168.100.20 ansible_user=root
+[targets]
+192.168.100.20 ansible_user=root
 ```
 
 3. Test ping
