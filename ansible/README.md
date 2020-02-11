@@ -218,6 +218,19 @@ or
 % ansible-playbook --check -i inventory/hosts master.yml
 ```
 
+### What is a Ansible inventory file?
+
+> The Ansible inventory file defines the hosts and groups of hosts upon which commands, modules, and tasks in a playbook operate.
+
+
+### What is a Ansible playbook file?
+
+> An Ansible playbook is an organized unit of scripts that defines work for a server configuration managed by the automation tool Ansible. Ansible is a configuration management tool that automates the configuration of multiple servers by the use of Ansible playbooks.
+
+----
+
+## Vagrant stuffs
+
 ### Vargrant commands
 
 ```
@@ -226,7 +239,12 @@ or
 % vagrant ssh
 % vagrant halt
 % vagrant destroy
+% vagrant suspend
+% vagrant reload
+% vagrant resume
 ```
+
+https://qiita.com/w2-yamaguchi/items/191830191f8af05ac4dd
 
 ### What to do if Vagrant cannot be installed?
 
@@ -236,15 +254,6 @@ or
 ```
 $ sudo sed -i "s/mirrorlist=https/mirrorlist=http/" /etc/yum.repos.d/epel.repo
 
-
-### What is a Ansible inventory file?
-
-> The Ansible inventory file defines the hosts and groups of hosts upon which commands, modules, and tasks in a playbook operate.
-
-
-### What is a Ansible playbook file?
-
-> An Ansible playbook is an organized unit of scripts that defines work for a server configuration managed by the automation tool Ansible. Ansible is a configuration management tool that automates the configuration of multiple servers by the use of Ansible playbooks.
 
 ### What is Vagrant mainly used for?
 
