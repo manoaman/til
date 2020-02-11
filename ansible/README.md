@@ -21,6 +21,15 @@
 % vagrant box add centos6.7 https://github.com/CommanderK5/packer-centos-template/releases/download/0.6.7/vagrant-centos-6.7.box
 ```
 
+or find a box from Vagrant Cloud.
+
+```
+% vagrant init {box name}
+```
+
+https://app.vagrantup.com/boxes/search?utf8=%E2%9C%93&sort=downloads&provider=&q=ubuntu
+
+
 4. Start vagrant
 
 ```
