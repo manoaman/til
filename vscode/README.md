@@ -58,3 +58,9 @@ Ctrl+r
 ```
 Ctrl + `
 ```
+
+### How to open a function/method in a file?
+
+```
+Command+Shift+O
+```
