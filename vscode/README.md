@@ -64,3 +64,5 @@ Ctrl + `
 ```
 Command+Shift+O
 ```
+
+https://dev.to/codevault/search-features-in-visual-studio-code-2a0c
