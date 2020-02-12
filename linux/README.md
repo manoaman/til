@@ -279,3 +279,11 @@ https://unix.stackexchange.com/questions/338116/turning-separate-lines-into-a-co
 % tune2fs -l /dev/sda1 | grep created
 ```
 https://serverfault.com/questions/221377/how-to-determine-the-age-of-a-linux-system-since-installation
+
+#### How to check the memory usage?
+
+```
+% watch -n 3 free -m
+```
+
+http://www.yourownlinux.com/2013/10/how-to-free-up-release-unused-cached-memory-in-linux.html
