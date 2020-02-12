@@ -259,8 +259,27 @@ $ sudo sed -i "s/mirrorlist=https/mirrorlist=http/" /etc/yum.repos.d/epel.repo
 
 > Vagrant is a tool for building and managing virtual machine environments in a single workflow. With an easy-to-use workflow and focus on automation, Vagrant lowers development environment setup time, increases production parity, and makes the "works on my machine" excuse a relic of the past.
 
+### cowsay + Ansible
+
+```
+% yum install cowsay
+```
+
+Set up
+```
+% vi ~/.bash_profile
+
+export ANSIBLE_COW_SELECTION=stegosaurus
+```
+
+To check what's in
+```
+% cowsay -l
+```
+
 ### Resources
 
 https://medium.com/@JohnFoderaro/macos-sierra-vagrant-quick-start-guide-2b8b78913be3
 https://www.vagrantup.com/intro/getting-started/teardown.html
 https://qiita.com/andrew954/items/1d9f460558da7b84768f
+http://arika.hateblo.jp/entry/2014/06/08/220206
