@@ -49,6 +49,11 @@ https://app.vagrantup.com/boxes/search?utf8=%E2%9C%93&sort=downloads&provider=&q
 
 ```
 % yum install ansible
+
+or 
+
+% sudo apt-get update
+% sudo apt-get ansible install
 ```
 
 3. Generate SSH key and send the public key
