@@ -242,6 +242,9 @@ or
 % vagrant suspend
 % vagrant reload
 % vagrant resume
+
+% vagrant box list
+% vagrant box add ubuntu/bionic64 ---> Ubuntu 18.04
 ```
 
 https://qiita.com/w2-yamaguchi/items/191830191f8af05ac4dd
