@@ -143,3 +143,18 @@ fatal: repository 'https://github.com/YOUR_REPO.git/' not found
 ```
 
 https://hacknote.jp/archives/29262/
+
+#### Switching remote urls?
+
+```
+% git remote set-url origin git://new.url.here # remove and re-add
+
+or
+
+% git remote remove origin # remove
+
+% git remote show origin # show remote url
+```
+
+https://stackoverflow.com/questions/16330404/how-to-remove-remote-origin-from-git-repo
+https://stackoverflow.com/questions/18200248/cloning-a-repo-from-someone-elses-github-and-pushing-it-to-a-repo-on-my-github
