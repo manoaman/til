@@ -287,6 +287,29 @@ To check what's in
 % cowsay -l
 ```
 
+#### How to include Ansible ssh vagrant user in a config file?
+
+```
+[all:vars]
+ansible_connection=ssh
+ansible_user=vagrant
+ansible_ssh_pass=vagrant
+```
+https://serverfault.com/questions/628989/how-to-set-default-ansible-username-password-for-ssh-connection
+
+
+#### Ansible reference guide
+
+1. connecting with a user name
+
+```
+% ansible all -m ping -u sammy
+% ansible-playbook myplaybook.yml -u sammy
+
+```
+
+https://www.digitalocean.com/community/cheatsheets/how-to-use-ansible-cheat-sheet-guide
+
 ### Resources
 
 https://medium.com/@JohnFoderaro/macos-sierra-vagrant-quick-start-guide-2b8b78913be3
