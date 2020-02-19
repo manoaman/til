@@ -271,6 +271,10 @@ https://serverfault.com/questions/628989/how-to-set-default-ansible-username-pas
 
 https://www.digitalocean.com/community/cheatsheets/how-to-use-ansible-cheat-sheet-guide
 
+#### How to setup Tomcat?
+
+https://github.com/manoaman/til/tree/master/ansible-tomcat
+
 ### Resources
 
 https://medium.com/@JohnFoderaro/macos-sierra-vagrant-quick-start-guide-2b8b78913be3
