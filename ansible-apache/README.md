@@ -25,7 +25,7 @@
 Inside vars/main.yml:
 
 ```
-apache_listen_port: 8080
+apache_listen_port: 80
 apache_vhosts:
   - {servername: "example.com", documentroot: "/var/www/vhosts/example_com"}
 ```
