@@ -49,6 +49,16 @@ https://qiita.com/imasaaki/items/2fd8dd3c251446f557c5
 % vagrant box list
 ```
 
+#### How to portforward with Vagrant?
+
+host (localhost)
+guest (e.g.)192.168.100.12)
+```
+config.vm.network :forwarded_port, guest: 8000, host: 8000
+```
+
+https://qiita.com/tn1117/items/e0a03cbd71b842fef57e
+
 #### Ansible?
 
 https://github.com/manoaman/til/blob/master/ansible/README.md
