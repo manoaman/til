@@ -287,3 +287,11 @@ https://serverfault.com/questions/221377/how-to-determine-the-age-of-a-linux-sys
 ```
 
 http://www.yourownlinux.com/2013/10/how-to-free-up-release-unused-cached-memory-in-linux.html
+
+#### How to check cpu usage statistics?
+
+```
+% apt-get install sysstat
+% iostat
+```
+https://linoxide.com/linux-command/linux-iostat-command/
