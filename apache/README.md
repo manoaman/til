@@ -70,3 +70,11 @@ https://serverfault.com/questions/918033/redirect-web-page-to-another-site-witho
 
 https://cwiki.apache.org/confluence/display/HTTPD/PasswordBasicAuth
 
+#### How to check the version?
+
+```
+% apachectl -v
+or
+% apachectl -V
+```
+https://askubuntu.com/questions/594668/how-to-find-out-the-apache-version-installed-in-ubuntu
