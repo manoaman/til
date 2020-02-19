@@ -59,6 +59,60 @@ config.vm.network :forwarded_port, guest: 8000, host: 8000
 
 https://qiita.com/tn1117/items/e0a03cbd71b842fef57e
 
+
+## Vagrant stuffs
+
+### Vargrant commands
+
+```
+% vagrant init
+% vagrant up
+% vagrant ssh
+% vagrant halt
+% vagrant destroy
+% vagrant suspend
+% vagrant reload
+% vagrant resume
+
+% vagrant box list
+% vagrant box add ubuntu/bionic64 ---> Ubuntu 18.04
+```
+
+https://qiita.com/w2-yamaguchi/items/191830191f8af05ac4dd
+
+### What to do if Vagrant cannot be installed?
+
+```
+% sudo sed -i "s/mirrorlist=https/mirrorlist=http/" /etc/yum.repos.d/epel.repo
+% yum install ansible
+```
+$ sudo sed -i "s/mirrorlist=https/mirrorlist=http/" /etc/yum.repos.d/epel.repo
+
+
+### What is Vagrant mainly used for?
+
+> Vagrant is a tool for building and managing virtual machine environments in a single workflow. With an easy-to-use workflow and focus on automation, Vagrant lowers development environment setup time, increases production parity, and makes the "works on my machine" excuse a relic of the past.
+
+### cowsay + Ansible
+
+```
+% yum install cowsay
+```
+
+Set up
+```
+% vi ~/.bash_profile
+
+export ANSIBLE_COW_SELECTION=stegosaurus
+```
+
+To check what's in
+```
+% cowsay -l
+```
+
+-----
+
 #### Ansible?
 
 https://github.com/manoaman/til/blob/master/ansible/README.md
