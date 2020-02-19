@@ -60,15 +60,14 @@ config.vm.network :forwarded_port, guest: 8000, host: 8000
 https://qiita.com/tn1117/items/e0a03cbd71b842fef57e
 
 
-## Vagrant stuffs
-
 ### Vargrant commands
 
 ```
 % vagrant init
 % vagrant up
-% vagrant ssh
 % vagrant halt
+
+% vagrant ssh {host_name}
 % vagrant destroy
 % vagrant suspend
 % vagrant reload
@@ -76,9 +75,12 @@ https://qiita.com/tn1117/items/e0a03cbd71b842fef57e
 
 % vagrant box list
 % vagrant box add ubuntu/bionic64 ---> Ubuntu 18.04
+
+% vagrant status
 ```
 
 https://qiita.com/w2-yamaguchi/items/191830191f8af05ac4dd
+https://qiita.com/tn1117/items/e0a03cbd71b842fef57e
 
 ### What to do if Vagrant cannot be installed?
 
