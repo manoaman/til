@@ -42,3 +42,14 @@ https://stackoverflow.com/questions/56313083/ansible-ubuntu-18-04-mysql-the-pymy
 ```
 mysql_root_password: super-secure-password
 ```
+
+5. Example Playbook (mysql-setup.yml)
+
+```
+- hosts: db-servers
+  become: yes
+  vars_files:
+    - vars/main.yml
+  roles:
+    - { role: geerlingguy.mysql }
+```
