@@ -113,6 +113,19 @@ To check what's in
 % cowsay -l
 ```
 
+
+### How to setup memory size, disk size, and cpu cores?
+
+```
+config.disksize.size = '50GB'
+
+vb.memory = "8192"
+vb.cpus = 1
+```
+https://qiita.com/____easy/items/28fee255c1939443efd9
+https://qiita.com/nmatayoshi/items/61b6936e9b9b0abecc1a
+https://qiita.com/nmatayoshi/items/61b6936e9b9b0abecc1a
+
 -----
 
 #### Ansible?
