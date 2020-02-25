@@ -158,3 +158,12 @@ or
 
 https://stackoverflow.com/questions/16330404/how-to-remove-remote-origin-from-git-repo
 https://stackoverflow.com/questions/18200248/cloning-a-repo-from-someone-elses-github-and-pushing-it-to-a-repo-on-my-github
+
+
+#### How to cache Git password for two days?
+
+```
+% git config --global credential.helper "cache --timeout=172800000"
+```
+
+https://stackoverflow.com/questions/5343068/is-there-a-way-to-cache-github-credentials-for-pushing-commits
