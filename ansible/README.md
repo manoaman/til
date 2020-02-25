@@ -226,9 +226,21 @@ https://www.digitalocean.com/community/cheatsheets/how-to-use-ansible-cheat-shee
 
 https://github.com/manoaman/til/tree/master/ansible-tomcat
 
+#### How do I see a list of all of the ansible_ variables?
+
+```
+% ansible -m setup hostname
+```
+https://docs.ansible.com/ansible/latest/reference_appendices/faq.html#how-do-i-see-a-list-of-all-of-the-ansible-variables
+https://stackoverflow.com/questions/18839509/where-can-i-get-a-list-of-ansible-pre-defined-variables
+
+----
+
 ### Resources
 
 https://medium.com/@JohnFoderaro/macos-sierra-vagrant-quick-start-guide-2b8b78913be3
 https://www.vagrantup.com/intro/getting-started/teardown.html
 https://qiita.com/andrew954/items/1d9f460558da7b84768f
 http://arika.hateblo.jp/entry/2014/06/08/220206
+
+
