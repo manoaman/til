@@ -131,3 +131,7 @@ https://qiita.com/nmatayoshi/items/61b6936e9b9b0abecc1a
 #### Ansible?
 
 https://github.com/manoaman/til/blob/master/ansible/README.md
+
+#### Resources
+
+http://arika.hateblo.jp/entry/2014/06/08/220206
