@@ -251,6 +251,12 @@ https://www.tecmint.com/glances-monitor-remote-linux-in-web-server-mode/
 
 https://linux.die.net/man/1/rsync
 
+#### How to copy over certain types of files?
+
+```
+% rsync -zarv  --include "*/" --include="*.obj" --exclude="*" $tgt $temp
+```
+
 #### How to list numeric folder names?
 
 ```
