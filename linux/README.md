@@ -301,3 +301,16 @@ http://www.yourownlinux.com/2013/10/how-to-free-up-release-unused-cached-memory-
 % iostat
 ```
 https://linoxide.com/linux-command/linux-iostat-command/
+
+
+#### How to ouput tree file structure into a json file?
+
+```
+% tree -J ./swc2obj/93neurons_sc > 93neurons_sc.json
+```
+
+#### How to replace a string in a file?
+
+```
+% sed -i -e 's/"type":"directory",//g' tree.json
+```
