@@ -34,3 +34,13 @@ run this command.
 ```
 npm install ajv@^5.0.0 --save
 ```
+
+#### What are the differeneces between --save and --save-dev on npm module installation?
+
+```
+--save-dev is used to save the package for development purpose. Example: unit tests, minification..
+--save is used to save the package required for the application to run.
+```
+
+https://stackoverflow.com/questions/22891211/what-is-the-difference-between-save-and-save-dev
+https://qiita.com/heyheyww/items/092fcbc490a249a2d05c
