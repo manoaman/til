@@ -19,3 +19,18 @@ https://stackoverflow.com/questions/45052520/do-i-need-both-package-lock-json-an
 #### ESLint ....?
 
 https://qiita.com/howdy39/items/6e2c75861bc5a14b2acf
+
+
+#### How to install missing npm module?
+
+If these errors occur,
+
+```
+npm WARN ajv-keywords@2.1.1 requires a peer of ajv@^5.0.0 but none is installed. You must install peer dependencies yoursel
+```
+
+run this command.
+
+```
+npm install ajv@^5.0.0 --save
+```
