@@ -44,3 +44,16 @@ npm install ajv@^5.0.0 --save
 
 https://stackoverflow.com/questions/22891211/what-is-the-difference-between-save-and-save-dev
 https://qiita.com/heyheyww/items/092fcbc490a249a2d05c
+
+#### How to setup a simple static file server?
+
+```
+% npm install http-server -g
+
+% cd ./test
+% http-server
+```
+or
+```
+http-server /home/test
+```
