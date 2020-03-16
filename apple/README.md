@@ -95,3 +95,17 @@ http://internethealthtest.org/
 
 
 https://qiita.com/omega999/items/6f65217b81ad3fffe7e6
+
+#### How to shortcut into folder from finder?
+
+```
+If you are already in Finder you can use one of them:
+
+In the Go menu, choose Go to Folder… option
+Press ⇧ + ⌘ + G
+If you want to do it from Dock - press and hold left mouse on Finder icon and choose Go to Folder….
+
+Just paste in modal window your path and press 
+```
+
+https://superuser.com/questions/44086/open-folder-for-a-given-path-in-mac-os-x
