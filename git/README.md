@@ -92,6 +92,16 @@ git config --get remote.origin.url
 git reset <filename>
 ```
 
+#### How to add a tag?
+
+```
+% git tag <tagname> -a
+
+% git push origin --tags
+
+% git tag -l
+```
+
 #### How to rename a tag?
 
 ```
