@@ -13,6 +13,8 @@ https://help.github.com/en/github/authenticating-to-github/creating-a-personal-a
 
 3. Set GITHUB_TOKEN in Travis environment variables
 
+![Environment variable](https://github.com/manoaman/til/blob/master/travis/Screen%20Shot%202020-03-26%20at%206.22.17%20PM.png)
+
 
 #### Differenece between travis-ci.org and travis-ci.com?
 
