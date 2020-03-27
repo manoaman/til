@@ -16,6 +16,10 @@ https://help.github.com/en/github/authenticating-to-github/creating-a-personal-a
 ![Environment variable](https://github.com/manoaman/til/blob/master/travis/Screen%20Shot%202020-03-26%20at%206.22.17%20PM.png)
 
 
+Tutorial:
+
+https://docs.travis-ci.com/user/tutorial/
+
 #### Differenece between travis-ci.org and travis-ci.com?
 
 > Travis CI originally created two separated platforms to differentiate between private repos / paid (travis-ci.com) and public repos / free (travis-ci.org).
