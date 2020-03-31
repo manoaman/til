@@ -166,10 +166,16 @@ https://docs.docker.com/engine/reference/commandline/logs/
 #### How to copy a file from a container to the host machine?
 
 ```
-docker cp <containerId>:/file/path/within/container /host/path/target
+% docker cp <containerId>:/file/path/within/container /host/path/target
 ```
 
 https://stackoverflow.com/questions/22907231/copying-files-from-host-to-docker-container
+
+#### How to copy all the files in a folder from a host to a container?
+
+```
+% docker cp /path/to/files/. container_name:/path/to/dist
+```
 
 #### The Docker executor
 https://docs.gitlab.com/runner/executors/docker.html
