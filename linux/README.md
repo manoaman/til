@@ -314,3 +314,24 @@ https://linoxide.com/linux-command/linux-iostat-command/
 ```
 % sed -i -e 's/"type":"directory",//g' tree.json
 ```
+
+#### How to update GRUB_DEFAULT to use different kernel version?
+
+```
+$ sudo vi /etc/default/grub
+
+GRUB_DEFAULT="Ubuntu, with Linux 4.15.0-23-generic"
+
+$ sudo update-grub
+```
+
+https://askubuntu.com/questions/216398/set-older-kernel-as-default-grub-entry
+https://ytooyama.hatenadiary.jp/entry/2018/06/25/235429
+
+#### How to find installed version of the kernel?
+
+```
+$ dpkg --list | grep linux-image
+```
+
+https://www.cyberciti.biz/faq/howto-display-all-installed-linux-kernel-version/
