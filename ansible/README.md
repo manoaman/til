@@ -8,6 +8,8 @@
 
 2. Install Ansible
 
+Ubuntu:
+
 ```
 % yum install ansible
 
@@ -18,6 +20,15 @@ or
 % sudo apt-get install ansible -y
 % sudo apt-get install python -y
 ```
+
+MacOS:
+
+```
+% curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+% python get-pip.py --user
+% pip install --user ansible
+```
+
 
 3. Generate SSH key and send the public key
 
