@@ -24,26 +24,9 @@ or
 MacOS:
 
 ```
-% git clone https://github.com/ansible/ansible.git
-% cd ansible
-% virtualenv venv ---> See notes if this doesn't work.
-% source venv/bin/activate
-% pip install .
-% which ansible
+% brew install ansible
 ```
-
-Notes: 
-
-The reason is you when you are installing `virtualenv`, the python version is still python3.6. So you have to reinstall after you upgrade python3.6 to python3.7:
-
-```
-% pip3 install virtualenv
-```
-
-https://stackoverflow.com/questions/45821068/why-cant-i-find-ansible-when-i-install-it-using-setup-py
-https://needone.app/manage-both-python2-and-python3-on-your-mac/
-https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#from-pip
-
+https://hvops.com/articles/ansible-mac-osx/
 
 3. Generate SSH key and send the public key
 
