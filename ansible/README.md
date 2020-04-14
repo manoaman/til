@@ -29,6 +29,8 @@ MacOS:
 % pip install --user ansible
 ```
 
+https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#from-pip
+
 
 3. Generate SSH key and send the public key
 
