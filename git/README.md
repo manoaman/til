@@ -177,3 +177,11 @@ https://stackoverflow.com/questions/18200248/cloning-a-repo-from-someone-elses-g
 ```
 
 https://stackoverflow.com/questions/5343068/is-there-a-way-to-cache-github-credentials-for-pushing-commits
+
+#### How to update password?
+
+On Mac:
+
+```
+% git config --global credential.helper osxkeychain
+```
