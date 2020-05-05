@@ -185,3 +185,27 @@ On Mac:
 ```
 % git config --global credential.helper osxkeychain
 ```
+
+#### Github “fatal: remote origin already exists” ?
+
+```
+% git remote set-url origin git@github.com:ppreyer/first_app.git
+```
+https://stackoverflow.com/questions/10904339/github-fatal-remote-origin-already-exists
+
+#### How do I undo 'git add' before commit ?
+
+```
+% git reset
+```
+
+https://stackoverflow.com/questions/348170/how-do-i-undo-git-add-before-commit
+
+#### Git command to show which specific files are ignored by .gitignore ?
+
+```
+% git check-ignore *
+```
+
+https://stackoverflow.com/questions/466764/git-command-to-show-which-specific-files-are-ignored-by-gitignore
+
